@@ -1,0 +1,12 @@
+1. have clusters for weekdays / weekend
+2. given a time of the day, retrieve the two clusters closest to that time
+	2.1. testing - .5hrs
+3. compute the prob of a timestamp belonging to a cluster - jeroen's formula - 1hrs
+	3.1. normal dist. probs
+4. prediction - 2.5hrs
+	4.1. day of the week, current time, last two successful calls - from call log
+	4.2. unsuccessful calls if any
+	4.3. most prob. numbers based on weighted cluster stats + thresholding (?)
+	4.4. testing
+
+No inbetween-clusters stats.

@@ -1,0 +1,49 @@
+package com.avg.innovation.call_prediction;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Call statistics based on a phone call log (a list of call records)
+ * 
+ * E.g. Phone Number:--- +31618664810 
+ * Call Type:--- OUTGOING 
+ * Call Date:--- Mon May 12 19:23:10 CEST 2014 
+ * Call duration in sec :--- 60
+ * 
+ * @author adminuser
+ *
+ */
+public abstract class CallStats {
+	
+	/**
+	 * Frequency and probability of a call (given a criteria which is not transparent here)
+	 *  
+	 * @author adminuser
+	 *
+	 */
+	class FreqProb {
+		public Integer freq;
+		public Double prob;
+		
+		public FreqProb(Integer freq, Double prob) {
+			this.freq = freq;
+			this.prob = prob;
+		}
+	}
+	
+	protected CallStats(List<CallRecord> callRecords) {
+		this.callRecords = callRecords;
+	}
+	
+	/**
+	 * 
+	 * @param callType
+	 * @return call statistics for each distinct call (unique by phone no.) of {@link CallType} from the call log, i.e. the frequency and probability 
+	 * of all outgoing calls following each distinct call.   
+	 */
+	public abstract Map<String, Map<String, FreqProb>> compute(CallType callType);
+	
+	protected List<CallRecord> callRecords;
+
+}

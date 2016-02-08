@@ -1,0 +1,74 @@
+setwd("/media/sf_workspace//call_prediction/resources/")
+score = read.table("score.txt")
+head(score)
+plot(score)
+score$V2 = 1:103
+plot(score)
+plot(score$V2, score$V1)
+head(score)
+score = read.table("score.txt")
+for i in 2:103
+for (i in 2:103) { score$V1[i] - score$V1[i-1] }
+score$V2 = null
+score$V2 = 0
+for (i in 2:103) { score$V2[i] = score$V1[i] - score$V1[i-1] }
+head(score)
+score
+for (i in 2:206) { score$V2[i] = score$V1[i] - score$V1[i-1] }
+score$V2 = 0
+for (i in 2:206) { score$V2[i] = score$V1[i] - score$V1[i-1] }
+for (i in 2:160) { score$V2[i] = score$V1[i] - score$V1[i-1] }
+score
+plot(score$V2)
+plot(score[130:160,]$V2)
+score2 = read.table("score2.txt")
+plot(score2$V2)
+score2
+score2 = read.csv("score2.txt")
+score2
+plot(score2$V2)
+names(score2)
+names(score2) = c("score", "diff")
+names(score2)
+plot(score2$diff)
+score2 = read.csv("score2.txt")
+names(score2) = c("score", "diff")
+plot(score2$diff)
+eve = read.table("evening")
+View(eve)
+hist(eve$V1)
+?hist
+hist(eve$V1, freq=F)
+hist(eve$V1, freq=T)
+hist(eve$V1, freq=T)
+hist(eve$V1, freq=F)
+hist(eve$V1, freq=F, breaks=3)
+hist(eve$V1, freq=F, breaks=2)
+hist(eve$V1, freq=F, breaks=3)
+afternoon = read.table("late.afternoon")
+hist(eve$V1, freq=F)
+hist(afternoon$V1, freq=F)
+min(afternoon$V1)
+max(afternoon$V1)
+mean(afternoon$V1)
+sd(afternoon$V1)
+?rnorm
+aft = rnorm(dim(afternoon)[1], mean=54385.19, sd=5423.968)
+aft
+plot(aft)
+?hist
+density(aft)
+plot(density(aft))
+6e+4
+(6e+4 - 54385.19)/5423.968
+?lines
+x = c(6+e4, 6+e4)
+x = c(6e+4, 6e+4)
+y = c(0, 5e-05)
+lines(x, y, lwd=3, col='r')
+lines(x, y, lwd=3, col='red')
+x=(54385.19, 54385.19)
+x=c(54385.19, 54385.19)
+y = c(0, 6e-05)
+lines(x, y, lwd=5, col='blue')
+(5e+4 - 54385.19)/5423.968

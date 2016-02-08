@@ -1,0 +1,155 @@
+package com.avg.innovation.call_prediction;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import com.avg.innovation.call_prediction.CallStats.FreqProb;
+
+public class PredictNextCall {
+
+	/**
+	 * parse a call log, returning a list of subsequent call records 
+	 * 
+	 * @param fileName
+	 * @return
+	 * @throws Exception
+	 */
+	public static List<CallRecord> parse(String fileName) throws Exception {
+		BufferedReader input = null;
+		try {
+			input = new BufferedReader(new FileReader(new File(fileName)));
+			boolean isInput = true;
+			List<CallRecord> callRecords = new ArrayList<CallRecord>();
+			do {
+				// see an example for a call record in CallRecord.java
+				String[] callRecord = new String[4];
+				for (int i = 0; i < 4; ++i) {
+					String line = input.readLine();
+					if (line != null) {
+						callRecord[i] = line;
+					} else {
+						isInput = false;
+						break;
+					}				
+				}				
+				if (isInput) {
+					callRecords.add(new CallRecord(callRecord));
+				}
+				input.readLine();
+			} while (isInput);
+			return callRecords;
+		} finally {
+			if (input != null) {
+				input.close();
+			}
+		}
+	}
+	
+	/**
+	 * suggests up to 5 phone numbers likely to call next based on one's call history
+	 * @param callRecords
+	 * @return
+	 */
+	public static Collection<String> predict(List<CallRecord> callRecords) {
+		Collection<String> suggestions = new LinkedHashSet<String>();
+		if (callRecords.size() == 0) return suggestions;
+		
+		CallRecord lastCall = callRecords.get(0);
+		// if last call is unsuccessful (missed, rejected, not picked up, or very short) then it's likely we'd like to call that number
+		if (lastCall.duration < 7) suggestions.add(lastCall.phoneNo);
+		
+		// what are the most frequent phone numbers from the last 3 days
+		Map<String, Integer> last3DaysCalls = new HashMap<String, Integer>();
+		for (CallRecord callRecord : callRecords) {
+			double noDays = (lastCall.startTime.getTime() - callRecord.startTime.getTime()) / (1000.0 * 3600. * 24.);
+			if (noDays < 3) {
+				Integer callFreq = last3DaysCalls.get(callRecord.phoneNo);
+				if (callFreq == null) callFreq = 0;
+				last3DaysCalls.put(callRecord.phoneNo, ++callFreq);
+			} else {
+				break;
+			}
+		}
+		
+		// add the most frequent phone numbers from the last 3 days to the suggestions so that there'll be a max of 3 numbers in the suggestion lists		
+		for (Entry<String, Integer> mostFrequentCallsLast2Days : Sorter.sortByValue(last3DaysCalls).descendingMap().entrySet()) {
+			suggestions.add(mostFrequentCallsLast2Days.getKey());
+			if (suggestions.size() == 3) break;
+		}
+		
+		// compute the statistics for each unique phone number for incoming / outgoing calls 
+		CallStats nextOutCallStats = new SingleStateCallStats(callRecords);		
+		Map<String, Map<String, FreqProb>> inStats = nextOutCallStats.compute(CallType.INCOMING);
+		Map<String, Map<String, FreqProb>> outStats = nextOutCallStats.compute(CallType.OUTGOING);
+		
+		// get the last incoming call
+		CallRecord lastIn = null;
+		for (CallRecord callRecord : callRecords) {
+			if (CallType.INCOMING.equals(callRecord.type) && callRecord.duration > 7) {
+				lastIn = callRecord;
+				break;
+			}
+		}
+
+		// get the last outgoing call
+		CallRecord lastOut = null;
+		for (CallRecord callRecord : callRecords) {
+			if (CallType.OUTGOING.equals(callRecord.type) && callRecord.duration > 7) {
+				lastOut = callRecord;
+				break;
+			}
+		}
+		
+		// compile a map of likely candidates (numbers to call),
+		// based on statistics for the last incoming and outgoing call
+		Map<String, Double> probableCandidates = new HashMap<String, Double>();
+				
+		if (lastIn != null) {		
+			Map<String, FreqProb> incoming = inStats.get(lastIn.phoneNo);
+			if (incoming != null) {			
+				for (Entry<String, FreqProb> statsEntry : incoming.entrySet()) {					
+					if (statsEntry.getValue().freq >= 2) probableCandidates.put(statsEntry.getKey(), statsEntry.getValue().prob);
+				}
+			}
+		}
+			
+		if (lastOut != null) {
+			Map<String, FreqProb> outgoing = outStats.get(lastOut.phoneNo);
+			if (outgoing != null) {			
+				for (Entry<String, FreqProb> statsEntry : outgoing.entrySet()) {					
+					if (statsEntry.getValue().freq >= 2) {
+						Double prob = probableCandidates.get(statsEntry.getKey());
+						if (prob == null || statsEntry.getValue().prob > prob) {
+							probableCandidates.put(statsEntry.getKey(), statsEntry.getValue().prob);
+						}
+					}
+				}
+			}
+		}
+
+		// sort candidates by their probability in descending order and add the most probable ones to the suggestions
+		// so that the number of suggestions doesn't exceed 5 
+		for (Entry<String, Double> mostProbable2Call : Sorter.sortByValue(probableCandidates).descendingMap().entrySet()) {
+			suggestions.add(mostProbable2Call.getKey());
+			if (suggestions.size() == 5) break;
+		}
+		
+		return suggestions;
+	}
+	
+	public static void main(String[] args) throws Exception {
+		List<CallRecord> records = parse(args[0]);	
+		Collection<String> top5ToCall = predict(records.subList(0, records.size()));
+		for (String phoneNo : top5ToCall)
+			System.out.println(phoneNo);
+	}
+
+}

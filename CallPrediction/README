@@ -1,0 +1,22 @@
+STEPS
+
+1. Read a call log from a file consisting of call entries of this format:
+
+Phone Number:--- +31646334641 
+Call Type:--- INCOMING 
+Call Date:--- Tue May 27 11:49:22 CEST 2014 
+Call duration in sec :--- 105
+----------------------------------
+.
+.
+.
+
+Generates weekday- and weekend clusters using hierarchical clustering and writes them to 2 separate files.
+See void com.avg.innovation.call_prediction.HClustCallRecords.clusterCallStats(String callLogFile, String weekClusterFileName, String weekendClusterFileName) throws Exception
+
+2. Suggest up to 5 phone numbers likely to call next based on one's call history.
+See  Collection<String> com.avg.innovation.call_prediction.PredictNextCall.predict(String callLogFile, String weekClusterFileName, String weekendClusterFileName) throws Exception
+First compute 1st and 2nd order Markov probability statistics on both the weekday and weekend clusters.
+Then compute the probability of the actual timestamp (at the time of call prediction) belonging to each of the individual clusters assuming that each cluster has a normal distribution wrt. time. 
+Finally it aggregates the top most likely call numbers from each of the clusters (based on cluster probability and 1st and 2nd order Markov probability statistics) also using some heuristics. 
+

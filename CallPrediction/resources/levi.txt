@@ -1,0 +1,2491 @@
+
+Phone Number:--- +31624001233 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Jun 03 16:28:52 CEST 2014 
+Call duration in sec :--- 15
+----------------------------------
+Phone Number:--- +31624001233 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Jun 03 16:04:43 CEST 2014 
+Call duration in sec :--- 20
+----------------------------------
+Phone Number:--- +31624001233 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Jun 03 16:04:14 CEST 2014 
+Call duration in sec :--- 18
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Jun 03 15:57:43 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Jun 03 15:53:56 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31621144831 
+Call Type:--- MISSED 
+Call Date:--- Tue Jun 03 14:31:48 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31641756252 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Jun 02 20:19:25 CEST 2014 
+Call duration in sec :--- 181
+----------------------------------
+Phone Number:--- +31631959533 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Jun 02 17:35:01 CEST 2014 
+Call duration in sec :--- 30
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Jun 02 17:11:04 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Jun 02 17:08:57 CEST 2014 
+Call duration in sec :--- 23
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Jun 02 12:35:49 CEST 2014 
+Call duration in sec :--- 106
+----------------------------------
+Phone Number:--- +31223614858 
+Call Type:--- INCOMING 
+Call Date:--- Sat May 31 23:35:08 CEST 2014 
+Call duration in sec :--- 59
+----------------------------------
+Phone Number:--- +310223614858 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 31 23:35:01 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0222314117 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 31 12:54:53 CEST 2014 
+Call duration in sec :--- 11
+----------------------------------
+Phone Number:--- 0222313551 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 31 12:53:36 CEST 2014 
+Call duration in sec :--- 29
+----------------------------------
+Phone Number:--- 0222313483 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 31 12:52:15 CEST 2014 
+Call duration in sec :--- 36
+----------------------------------
+Phone Number:--- 0222314741 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 31 12:48:57 CEST 2014 
+Call duration in sec :--- 160
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 31 11:49:30 CEST 2014 
+Call duration in sec :--- 45
+----------------------------------
+Phone Number:--- +31727502000 
+Call Type:--- MISSED 
+Call Date:--- Sat May 31 11:31:49 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0728080120 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:53:48 CEST 2014 
+Call duration in sec :--- 215
+----------------------------------
+Phone Number:--- +310727502000 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:53:23 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +310727502000 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:53:07 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0642240758 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:48:47 CEST 2014 
+Call duration in sec :--- 54
+----------------------------------
+Phone Number:--- 0725062180 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:46:59 CEST 2014 
+Call duration in sec :--- 31
+----------------------------------
+Phone Number:--- 0625319552 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:43:31 CEST 2014 
+Call duration in sec :--- 16
+----------------------------------
+Phone Number:--- 0725063669 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:40:21 CEST 2014 
+Call duration in sec :--- 34
+----------------------------------
+Phone Number:--- 0646364330 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:26:03 CEST 2014 
+Call duration in sec :--- 98
+----------------------------------
+Phone Number:--- 0653116170 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:18:31 CEST 2014 
+Call duration in sec :--- 66
+----------------------------------
+Phone Number:--- +31623963381 
+Call Type:--- INCOMING 
+Call Date:--- Fri May 30 18:15:14 CEST 2014 
+Call duration in sec :--- 87
+----------------------------------
+Phone Number:--- 0623963381 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:14:28 CEST 2014 
+Call duration in sec :--- 7
+----------------------------------
+Phone Number:--- 0725061080 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:09:00 CEST 2014 
+Call duration in sec :--- 164
+----------------------------------
+Phone Number:--- 00310725061080 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:08:30 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 00310725061080 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:08:06 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0728080120 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 18:00:44 CEST 2014 
+Call duration in sec :--- 77
+----------------------------------
+Phone Number:--- 0725061368 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 30 17:57:17 CEST 2014 
+Call duration in sec :--- 123
+----------------------------------
+Phone Number:--- +31636127035 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 29 17:05:18 CEST 2014 
+Call duration in sec :--- 117
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 29 14:01:58 CEST 2014 
+Call duration in sec :--- 34
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Wed May 28 19:55:51 CEST 2014 
+Call duration in sec :--- 71
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- INCOMING 
+Call Date:--- Wed May 28 19:49:29 CEST 2014 
+Call duration in sec :--- 23
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Wed May 28 17:33:06 CEST 2014 
+Call duration in sec :--- 273
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 27 22:34:49 CEST 2014 
+Call duration in sec :--- 2
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 27 22:27:20 CEST 2014 
+Call duration in sec :--- 5
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 27 19:01:44 CEST 2014 
+Call duration in sec :--- 32
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 27 19:01:10 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- MISSED 
+Call Date:--- Tue May 27 13:09:09 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 27 12:53:41 CEST 2014 
+Call duration in sec :--- 38
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 26 16:57:52 CEST 2014 
+Call duration in sec :--- 188
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 26 16:54:30 CEST 2014 
+Call duration in sec :--- 20
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Sun May 25 11:25:28 CEST 2014 
+Call duration in sec :--- 323
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- MISSED 
+Call Date:--- Sun May 25 11:24:36 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31646234268 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 25 09:53:50 CEST 2014 
+Call duration in sec :--- 65
+----------------------------------
+Phone Number:--- +31646234268 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 25 09:04:48 CEST 2014 
+Call duration in sec :--- 100
+----------------------------------
+Phone Number:--- 0626326420 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 25 09:03:02 CEST 2014 
+Call duration in sec :--- 75
+----------------------------------
+Phone Number:--- +31646234268 
+Call Type:--- INCOMING 
+Call Date:--- Sun May 25 08:44:51 CEST 2014 
+Call duration in sec :--- 32
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- MISSED 
+Call Date:--- Sat May 24 16:36:47 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 24 16:12:21 CEST 2014 
+Call duration in sec :--- 11
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 24 16:07:43 CEST 2014 
+Call duration in sec :--- 32
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- MISSED 
+Call Date:--- Sat May 24 14:34:31 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 24 13:32:50 CEST 2014 
+Call duration in sec :--- 41
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 24 13:30:25 CEST 2014 
+Call duration in sec :--- 100
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 24 13:10:20 CEST 2014 
+Call duration in sec :--- 8
+----------------------------------
+Phone Number:--- +31638786423 
+Call Type:--- INCOMING 
+Call Date:--- Sat May 24 12:38:37 CEST 2014 
+Call duration in sec :--- 896
+----------------------------------
+Phone Number:--- 0626326420 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 24 11:48:34 CEST 2014 
+Call duration in sec :--- 190
+----------------------------------
+Phone Number:--- +31646234268 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 24 11:37:24 CEST 2014 
+Call duration in sec :--- 127
+----------------------------------
+Phone Number:--- 0626326420 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 24 11:32:26 CEST 2014 
+Call duration in sec :--- 137
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 23 18:02:49 CEST 2014 
+Call duration in sec :--- 115
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- INCOMING 
+Call Date:--- Fri May 23 08:30:44 CEST 2014 
+Call duration in sec :--- 16
+----------------------------------
+Phone Number:--- +31641756252 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 22 20:24:05 CEST 2014 
+Call duration in sec :--- 184
+----------------------------------
+Phone Number:--- +31641756252 
+Call Type:--- MISSED 
+Call Date:--- Thu May 22 15:41:25 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31641756252 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 22 13:05:50 CEST 2014 
+Call duration in sec :--- 191
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Wed May 21 14:39:43 CEST 2014 
+Call duration in sec :--- 1114
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Wed May 21 14:23:31 CEST 2014 
+Call duration in sec :--- 152
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- INCOMING 
+Call Date:--- Wed May 21 09:48:16 CEST 2014 
+Call duration in sec :--- 47
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Wed May 21 09:42:12 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31616299174 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 17:03:50 CEST 2014 
+Call duration in sec :--- 477
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:25:54 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:25:47 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:25:27 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31653817447 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:24:41 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:24:24 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:24:18 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31653817447 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:23:22 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31653817447 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:23:12 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +36705537923 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:22:45 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +36705537923 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:22:40 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +36705537923 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:22:37 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:22:13 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:22:10 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 20 14:22:04 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 19 20:34:42 CEST 2014 
+Call duration in sec :--- 14
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 19 20:21:45 CEST 2014 
+Call duration in sec :--- 123
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 19 20:09:40 CEST 2014 
+Call duration in sec :--- 384
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- MISSED 
+Call Date:--- Mon May 19 19:56:55 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 19 18:21:40 CEST 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +31616299174 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 19 18:18:55 CEST 2014 
+Call duration in sec :--- 7
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 19 17:30:36 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 19 16:44:05 CEST 2014 
+Call duration in sec :--- 144
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- INCOMING 
+Call Date:--- Mon May 19 13:52:53 CEST 2014 
+Call duration in sec :--- 108
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 19 13:42:51 CEST 2014 
+Call duration in sec :--- 12
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sun May 18 20:46:50 CEST 2014 
+Call duration in sec :--- 44
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 18 20:19:43 CEST 2014 
+Call duration in sec :--- 4
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sun May 18 19:47:21 CEST 2014 
+Call duration in sec :--- 153
+----------------------------------
+Phone Number:--- +31646234268 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 18 18:14:53 CEST 2014 
+Call duration in sec :--- 42
+----------------------------------
+Phone Number:--- +31202170500 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 18 18:00:08 CEST 2014 
+Call duration in sec :--- 14
+----------------------------------
+Phone Number:--- +31202170500 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 18 17:58:14 CEST 2014 
+Call duration in sec :--- 62
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 18 11:06:46 CEST 2014 
+Call duration in sec :--- 28
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 23:02:46 CEST 2014 
+Call duration in sec :--- 1037
+----------------------------------
+Phone Number:--- 0883119898 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 22:29:43 CEST 2014 
+Call duration in sec :--- 132
+----------------------------------
+Phone Number:--- 0883119898 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 22:08:47 CEST 2014 
+Call duration in sec :--- 63
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 20:53:42 CEST 2014 
+Call duration in sec :--- 105
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sat May 17 20:51:47 CEST 2014 
+Call duration in sec :--- 88
+----------------------------------
+Phone Number:--- 0647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 20:51:06 CEST 2014 
+Call duration in sec :--- 37
+----------------------------------
+Phone Number:--- 0883119898 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 18:33:51 CEST 2014 
+Call duration in sec :--- 55
+----------------------------------
+Phone Number:--- 0647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 18:13:49 CEST 2014 
+Call duration in sec :--- 60
+----------------------------------
+Phone Number:--- 0883119898 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 17:58:31 CEST 2014 
+Call duration in sec :--- 96
+----------------------------------
+Phone Number:--- 0883119898 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 17:27:23 CEST 2014 
+Call duration in sec :--- 210
+----------------------------------
+Phone Number:--- 0883119898 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 16:28:49 CEST 2014 
+Call duration in sec :--- 146
+----------------------------------
+Phone Number:--- 0031208100203 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 17 15:10:10 CEST 2014 
+Call duration in sec :--- 161
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 23:28:47 CEST 2014 
+Call duration in sec :--- 41
+----------------------------------
+Phone Number:--- +31616299174 
+Call Type:--- INCOMING 
+Call Date:--- Fri May 16 23:05:18 CEST 2014 
+Call duration in sec :--- 17
+----------------------------------
+Phone Number:--- +31616299174 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 22:17:23 CEST 2014 
+Call duration in sec :--- 169
+----------------------------------
+Phone Number:--- +40740564458 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 22:16:54 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 1233 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 22:14:02 CEST 2014 
+Call duration in sec :--- 163
+----------------------------------
+Phone Number:--- 0031611195209 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 14:42:52 CEST 2014 
+Call duration in sec :--- 165
+----------------------------------
+Phone Number:--- +31616299174 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 14:32:36 CEST 2014 
+Call duration in sec :--- 35
+----------------------------------
+Phone Number:--- 0031611195209 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 14:30:29 CEST 2014 
+Call duration in sec :--- 34
+----------------------------------
+Phone Number:--- +31616299174 
+Call Type:--- INCOMING 
+Call Date:--- Fri May 16 13:59:17 CEST 2014 
+Call duration in sec :--- 260
+----------------------------------
+Phone Number:--- 0031611195209 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 13:29:15 CEST 2014 
+Call duration in sec :--- 100
+----------------------------------
+Phone Number:--- 0031611195209 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 12:00:28 CEST 2014 
+Call duration in sec :--- 120
+----------------------------------
+Phone Number:--- 0031611195209 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 16 11:08:47 CEST 2014 
+Call duration in sec :--- 7
+----------------------------------
+Phone Number:--- 0031611195209 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 23:16:54 CEST 2014 
+Call duration in sec :--- 527
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 23:14:47 CEST 2014 
+Call duration in sec :--- 115
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 18:59:50 CEST 2014 
+Call duration in sec :--- 41
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- MISSED 
+Call Date:--- Thu May 15 18:58:43 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0031611195209 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 18:58:10 CEST 2014 
+Call duration in sec :--- 73
+----------------------------------
+Phone Number:--- +31206158414 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 18:57:26 CEST 2014 
+Call duration in sec :--- 5
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 18:53:31 CEST 2014 
+Call duration in sec :--- 22
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- INCOMING 
+Call Date:--- Thu May 15 18:26:31 CEST 2014 
+Call duration in sec :--- 120
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 18:22:07 CEST 2014 
+Call duration in sec :--- 31
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 18:21:48 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40740564458 
+Call Type:--- OUTGOING 
+Call Date:--- Thu May 15 08:27:52 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31206158414 
+Call Type:--- INCOMING 
+Call Date:--- Wed May 14 10:05:43 CEST 2014 
+Call duration in sec :--- 136
+----------------------------------
+Phone Number:--- +40724365303 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 13 21:48:29 CEST 2014 
+Call duration in sec :--- 4014
+----------------------------------
+Phone Number:--- +40722435303 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 13 21:45:54 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 13 16:13:58 CEST 2014 
+Call duration in sec :--- 656
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Mon May 12 21:05:25 CEST 2014 
+Call duration in sec :--- 370
+----------------------------------
+Phone Number:--- +31650435174 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 12 20:31:48 CEST 2014 
+Call duration in sec :--- 15
+----------------------------------
+Phone Number:--- +31650435174 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 12 20:01:41 CEST 2014 
+Call duration in sec :--- 153
+----------------------------------
+Phone Number:--- 0031611195209 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 12 18:21:56 CEST 2014 
+Call duration in sec :--- 342
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- MISSED 
+Call Date:--- Sun May 11 20:33:08 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31657582868 
+Call Type:--- INCOMING 
+Call Date:--- Sat May 10 14:57:58 CEST 2014 
+Call duration in sec :--- 23
+----------------------------------
+Phone Number:--- +31657582868 
+Call Type:--- MISSED 
+Call Date:--- Sat May 10 14:56:17 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 10 11:46:48 CEST 2014 
+Call duration in sec :--- 11
+----------------------------------
+Phone Number:--- 0647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 10 11:45:52 CEST 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +31644034934 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 10 10:30:09 CEST 2014 
+Call duration in sec :--- 568
+----------------------------------
+Phone Number:--- +31621144831 
+Call Type:--- INCOMING 
+Call Date:--- Sat May 10 10:26:55 CEST 2014 
+Call duration in sec :--- 61
+----------------------------------
+Phone Number:--- +31644034934 
+Call Type:--- MISSED 
+Call Date:--- Sat May 10 10:20:40 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31644034934 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 10 10:04:42 CEST 2014 
+Call duration in sec :--- 12
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 09 17:00:29 CEST 2014 
+Call duration in sec :--- 1060
+----------------------------------
+Phone Number:--- +31657582868 
+Call Type:--- MISSED 
+Call Date:--- Fri May 09 13:09:09 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 09 09:05:02 CEST 2014 
+Call duration in sec :--- 1747
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Wed May 07 21:46:40 CEST 2014 
+Call duration in sec :--- 1824
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 06 09:57:07 CEST 2014 
+Call duration in sec :--- 222
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Tue May 06 09:56:04 CEST 2014 
+Call duration in sec :--- 2
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 05 17:34:32 CEST 2014 
+Call duration in sec :--- 160
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 05 17:20:13 CEST 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon May 05 17:18:05 CEST 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +71125857517 
+Call Type:--- INCOMING 
+Call Date:--- Sun May 04 21:20:07 CEST 2014 
+Call duration in sec :--- 188
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sun May 04 15:55:44 CEST 2014 
+Call duration in sec :--- 30
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- INCOMING 
+Call Date:--- Sun May 04 08:05:55 CEST 2014 
+Call duration in sec :--- 19
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Sat May 03 19:42:29 CEST 2014 
+Call duration in sec :--- 105
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 03 19:09:16 CEST 2014 
+Call duration in sec :--- 334
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- INCOMING 
+Call Date:--- Sat May 03 18:39:12 CEST 2014 
+Call duration in sec :--- 42
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- MISSED 
+Call Date:--- Sat May 03 18:17:44 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 03 18:12:24 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 03 18:09:05 CEST 2014 
+Call duration in sec :--- 105
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 03 17:58:30 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 03 17:32:20 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 03 16:53:12 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat May 03 16:51:30 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- INCOMING 
+Call Date:--- Sat May 03 11:00:30 CEST 2014 
+Call duration in sec :--- 239
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- MISSED 
+Call Date:--- Fri May 02 20:36:54 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 02 20:32:08 CEST 2014 
+Call duration in sec :--- 97
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri May 02 20:19:21 CEST 2014 
+Call duration in sec :--- 5
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 30 14:22:44 CEST 2014 
+Call duration in sec :--- 559
+----------------------------------
+Phone Number:--- 1233 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 30 09:24:43 CEST 2014 
+Call duration in sec :--- 68
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Apr 29 21:48:38 CEST 2014 
+Call duration in sec :--- 25
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Apr 28 21:24:38 CEST 2014 
+Call duration in sec :--- 407
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 27 07:18:58 CEST 2014 
+Call duration in sec :--- 30
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 11:38:01 CEST 2014 
+Call duration in sec :--- 126
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- MISSED 
+Call Date:--- Sat Apr 26 11:28:16 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40365407951 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 10:49:01 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40365730499 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 10:47:05 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40365407951 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 10:45:44 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Sat Apr 26 10:30:09 CEST 2014 
+Call duration in sec :--- 399
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 10:17:21 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40756088488 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 10:06:47 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 10:05:01 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 10:02:53 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40756088488 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 09:46:59 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40756088488 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 26 09:44:48 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 22:22:24 CEST 2014 
+Call duration in sec :--- 375
+----------------------------------
+Phone Number:--- +40756088488 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 19:34:24 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 19:33:45 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 19:14:56 CEST 2014 
+Call duration in sec :--- 21
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 19:09:20 CEST 2014 
+Call duration in sec :--- 38
+----------------------------------
+Phone Number:--- +40740351000 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 17:09:04 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40740351000 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 16:57:47 CEST 2014 
+Call duration in sec :--- 50
+----------------------------------
+Phone Number:--- +40740351000 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 15:23:57 CEST 2014 
+Call duration in sec :--- 32
+----------------------------------
+Phone Number:--- +33677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 13:59:47 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40740351000 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 13:55:29 CEST 2014 
+Call duration in sec :--- 93
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 13:50:49 CEST 2014 
+Call duration in sec :--- 59
+----------------------------------
+Phone Number:--- +40740351000 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 25 13:44:36 CEST 2014 
+Call duration in sec :--- 51
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Wed Apr 23 16:22:07 CEST 2014 
+Call duration in sec :--- 108
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Wed Apr 23 16:15:46 CEST 2014 
+Call duration in sec :--- 345
+----------------------------------
+Phone Number:--- +40740351000 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 15:58:01 CEST 2014 
+Call duration in sec :--- 133
+----------------------------------
+Phone Number:--- +33677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 15:57:35 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 15:52:28 CEST 2014 
+Call duration in sec :--- 162
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 15:48:52 CEST 2014 
+Call duration in sec :--- 179
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 15:46:13 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 10:27:54 CEST 2014 
+Call duration in sec :--- 57
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- MISSED 
+Call Date:--- Wed Apr 23 10:27:35 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 10:27:02 CEST 2014 
+Call duration in sec :--- 8
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 10:25:13 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Wed Apr 23 08:19:45 CEST 2014 
+Call duration in sec :--- 46
+----------------------------------
+Phone Number:--- +40265335150 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 07:07:56 CEST 2014 
+Call duration in sec :--- 91
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 23 07:06:10 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Apr 21 21:21:25 CEST 2014 
+Call duration in sec :--- 574
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Apr 21 21:03:35 CEST 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Apr 21 20:58:11 CEST 2014 
+Call duration in sec :--- 4
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 20 11:51:43 CEST 2014 
+Call duration in sec :--- 789
+----------------------------------
+Phone Number:--- +40740564458 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 23:14:17 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 22:11:26 CEST 2014 
+Call duration in sec :--- 102
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 21:38:34 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- MISSED 
+Call Date:--- Sat Apr 19 21:07:22 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40740366504 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 19:48:05 CEST 2014 
+Call duration in sec :--- 33
+----------------------------------
+Phone Number:--- +40740567430 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 19:46:51 CEST 2014 
+Call duration in sec :--- 42
+----------------------------------
+Phone Number:--- +40740567430 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 19:46:28 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40740366504 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 19:45:03 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40740366504 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 19:44:39 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40740567430 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 19:42:26 CEST 2014 
+Call duration in sec :--- 73
+----------------------------------
+Phone Number:--- +40756088488 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 18:53:26 CEST 2014 
+Call duration in sec :--- 85
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 18:49:22 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 18:30:50 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 19 14:03:38 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- INCOMING 
+Call Date:--- Fri Apr 18 20:22:54 CEST 2014 
+Call duration in sec :--- 28
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 18 20:02:42 CEST 2014 
+Call duration in sec :--- 28
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 18 12:28:34 CEST 2014 
+Call duration in sec :--- 158
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 18 12:25:36 CEST 2014 
+Call duration in sec :--- 4
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 17 17:03:22 CEST 2014 
+Call duration in sec :--- 135
+----------------------------------
+Phone Number:--- 0206622822 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 17 16:58:44 CEST 2014 
+Call duration in sec :--- 181
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- MISSED 
+Call Date:--- Thu Apr 17 15:45:50 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 17 15:04:34 CEST 2014 
+Call duration in sec :--- 61
+----------------------------------
+Phone Number:--- 0881236555 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 17 09:07:12 CEST 2014 
+Call duration in sec :--- 186
+----------------------------------
+Phone Number:--- 09007490499 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 17 08:38:57 CEST 2014 
+Call duration in sec :--- 359
+----------------------------------
+Phone Number:--- +31206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 17 08:35:27 CEST 2014 
+Call duration in sec :--- 116
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 16 17:00:41 CEST 2014 
+Call duration in sec :--- 436
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- MISSED 
+Call Date:--- Wed Apr 16 16:59:59 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 16 15:12:48 CEST 2014 
+Call duration in sec :--- 18
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 16 14:51:05 CEST 2014 
+Call duration in sec :--- 1
+----------------------------------
+Phone Number:--- +33677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Apr 15 22:11:06 CEST 2014 
+Call duration in sec :--- 106
+----------------------------------
+Phone Number:--- +33677445560 
+Call Type:--- MISSED 
+Call Date:--- Mon Apr 14 19:14:50 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Apr 14 11:24:54 CEST 2014 
+Call duration in sec :--- 205
+----------------------------------
+Phone Number:--- +33677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 13 20:52:26 CEST 2014 
+Call duration in sec :--- 7
+----------------------------------
+Phone Number:--- 0654937401 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 13 12:39:29 CEST 2014 
+Call duration in sec :--- 5
+----------------------------------
+Phone Number:--- 0654937401 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 13 12:32:22 CEST 2014 
+Call duration in sec :--- 42
+----------------------------------
+Phone Number:--- 0654937401 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 13 09:55:51 CEST 2014 
+Call duration in sec :--- 110
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 13 09:52:18 CEST 2014 
+Call duration in sec :--- 169
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 13 09:51:34 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31620632902 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 13 09:51:27 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 12 21:04:09 CEST 2014 
+Call duration in sec :--- 897
+----------------------------------
+Phone Number:--- +40744709420 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 12 20:59:32 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- MISSED 
+Call Date:--- Sat Apr 12 18:06:05 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 12 15:23:00 CEST 2014 
+Call duration in sec :--- 839
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 12 15:22:13 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- MISSED 
+Call Date:--- Sat Apr 12 15:09:54 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sat Apr 12 14:08:55 CEST 2014 
+Call duration in sec :--- 39
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sat Apr 12 14:08:08 CEST 2014 
+Call duration in sec :--- 9
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- MISSED 
+Call Date:--- Sat Apr 12 13:47:33 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 12 13:31:04 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 12 13:28:19 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 11 19:01:13 CEST 2014 
+Call duration in sec :--- 204
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- MISSED 
+Call Date:--- Fri Apr 11 18:57:54 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- INCOMING 
+Call Date:--- Fri Apr 11 17:09:39 CEST 2014 
+Call duration in sec :--- 107
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 11 17:01:13 CEST 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +31621144831 
+Call Type:--- MISSED 
+Call Date:--- Thu Apr 10 21:25:32 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- MISSED 
+Call Date:--- Thu Apr 10 21:01:45 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- INCOMING 
+Call Date:--- Thu Apr 10 20:17:17 CEST 2014 
+Call duration in sec :--- 122
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 10 18:52:02 CEST 2014 
+Call duration in sec :--- 2
+----------------------------------
+Phone Number:--- 0652601767 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 10 13:10:02 CEST 2014 
+Call duration in sec :--- 7
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 09 09:50:58 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 06 15:45:16 CEST 2014 
+Call duration in sec :--- 48
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 06 15:32:26 CEST 2014 
+Call duration in sec :--- 63
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 06 14:41:21 CEST 2014 
+Call duration in sec :--- 149
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 06 14:35:36 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 06 13:13:31 CEST 2014 
+Call duration in sec :--- 71
+----------------------------------
+Phone Number:--- +71125857517 
+Call Type:--- INCOMING 
+Call Date:--- Sun Apr 06 11:11:29 CEST 2014 
+Call duration in sec :--- 693
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 06 10:34:44 CEST 2014 
+Call duration in sec :--- 154
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 06 10:33:16 CEST 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Apr 06 10:32:35 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31636127035 
+Call Type:--- MISSED 
+Call Date:--- Sat Apr 05 17:50:31 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 05 16:51:27 CEST 2014 
+Call duration in sec :--- 22
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 05 16:45:38 CEST 2014 
+Call duration in sec :--- 70
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 05 16:44:33 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 05 16:38:31 CEST 2014 
+Call duration in sec :--- 98
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 05 16:31:57 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0652601767 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Apr 05 15:12:41 CEST 2014 
+Call duration in sec :--- 40
+----------------------------------
+Phone Number:--- +33677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 23:09:28 CEST 2014 
+Call duration in sec :--- 1373
+----------------------------------
+Phone Number:--- +33677445560 
+Call Type:--- INCOMING 
+Call Date:--- Fri Apr 04 23:07:21 CEST 2014 
+Call duration in sec :--- 98
+----------------------------------
+Phone Number:--- +491631706797 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 23:01:35 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0033677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 23:00:49 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0033677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 22:56:30 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0033677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 22:55:02 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0033677445560 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 22:53:14 CEST 2014 
+Call duration in sec :--- 59
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 21:44:07 CEST 2014 
+Call duration in sec :--- 89
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- MISSED 
+Call Date:--- Fri Apr 04 20:58:33 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31641756252 
+Call Type:--- INCOMING 
+Call Date:--- Fri Apr 04 19:11:47 CEST 2014 
+Call duration in sec :--- 33
+----------------------------------
+Phone Number:--- +31641756252 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 19:10:50 CEST 2014 
+Call duration in sec :--- 7
+----------------------------------
+Phone Number:--- +31643723290 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 18:06:42 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31643723920 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 18:01:31 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31643723920 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 18:01:16 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- INCOMING 
+Call Date:--- Fri Apr 04 13:40:08 CEST 2014 
+Call duration in sec :--- 322
+----------------------------------
+Phone Number:--- +31653218628 
+Call Type:--- INCOMING 
+Call Date:--- Fri Apr 04 13:04:45 CEST 2014 
+Call duration in sec :--- 30
+----------------------------------
+Phone Number:--- 0653218628 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 13:03:18 CEST 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- -1 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Apr 04 13:02:31 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Thu Apr 03 17:53:05 CEST 2014 
+Call duration in sec :--- 139
+----------------------------------
+Phone Number:--- +31653817447 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 03 08:56:29 CEST 2014 
+Call duration in sec :--- 1
+----------------------------------
+Phone Number:--- +31653817447 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 03 08:50:20 CEST 2014 
+Call duration in sec :--- 8
+----------------------------------
+Phone Number:--- +31621144980 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Apr 03 08:39:19 CEST 2014 
+Call duration in sec :--- 68
+----------------------------------
+Phone Number:--- 0204124442 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Apr 02 12:08:32 CEST 2014 
+Call duration in sec :--- 33
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Mon Mar 31 19:57:22 CEST 2014 
+Call duration in sec :--- 168
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 31 19:51:00 CEST 2014 
+Call duration in sec :--- 109
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 30 21:03:22 CEST 2014 
+Call duration in sec :--- 1293
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 30 21:02:35 CEST 2014 
+Call duration in sec :--- 27
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 30 18:53:06 CEST 2014 
+Call duration in sec :--- 234
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 30 18:45:37 CEST 2014 
+Call duration in sec :--- 176
+----------------------------------
+Phone Number:--- +31208100203 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 30 11:03:44 CEST 2014 
+Call duration in sec :--- 74
+----------------------------------
+Phone Number:--- +310208100203 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 30 11:03:14 CEST 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +972548035889 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 29 12:28:34 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +972548035889 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 29 12:28:10 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0208100203 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 29 09:47:04 CET 2014 
+Call duration in sec :--- 44
+----------------------------------
+Phone Number:--- +31622553280 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 28 21:25:24 CET 2014 
+Call duration in sec :--- 78
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 28 21:14:02 CET 2014 
+Call duration in sec :--- 300
+----------------------------------
+Phone Number:--- +31206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 28 17:20:12 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 28 15:31:43 CET 2014 
+Call duration in sec :--- 73
+----------------------------------
+Phone Number:--- 0206234550 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 28 15:22:23 CET 2014 
+Call duration in sec :--- 57
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 28 13:50:05 CET 2014 
+Call duration in sec :--- 207
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- INCOMING 
+Call Date:--- Wed Mar 26 17:56:03 CET 2014 
+Call duration in sec :--- 480
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Mar 26 17:55:28 CET 2014 
+Call duration in sec :--- 316
+----------------------------------
+Phone Number:--- +31206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Mar 26 10:33:28 CET 2014 
+Call duration in sec :--- 154
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- INCOMING 
+Call Date:--- Tue Mar 25 20:58:58 CET 2014 
+Call duration in sec :--- 310
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Mar 25 18:54:59 CET 2014 
+Call duration in sec :--- 13
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Tue Mar 25 18:53:46 CET 2014 
+Call duration in sec :--- 28
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Mar 25 14:24:10 CET 2014 
+Call duration in sec :--- 4
+----------------------------------
+Phone Number:--- +31206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Mar 25 14:21:11 CET 2014 
+Call duration in sec :--- 87
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Mar 25 13:24:14 CET 2014 
+Call duration in sec :--- 272
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Mar 25 13:20:42 CET 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +40265335150 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Mar 25 08:53:33 CET 2014 
+Call duration in sec :--- 195
+----------------------------------
+Phone Number:--- +40265335150 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Mar 25 07:41:19 CET 2014 
+Call duration in sec :--- 536
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 24 21:20:20 CET 2014 
+Call duration in sec :--- 102
+----------------------------------
+Phone Number:--- +31619325476 
+Call Type:--- MISSED 
+Call Date:--- Mon Mar 24 21:18:31 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0619325476 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 24 20:57:36 CET 2014 
+Call duration in sec :--- 13
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 24 20:54:07 CET 2014 
+Call duration in sec :--- 4
+----------------------------------
+Phone Number:--- +31647897185 
+Call Type:--- MISSED 
+Call Date:--- Mon Mar 24 19:52:43 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31630373096 
+Call Type:--- INCOMING 
+Call Date:--- Mon Mar 24 17:57:53 CET 2014 
+Call duration in sec :--- 129
+----------------------------------
+Phone Number:--- 0204124442 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 24 13:46:28 CET 2014 
+Call duration in sec :--- 30
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 24 11:05:21 CET 2014 
+Call duration in sec :--- 8
+----------------------------------
+Phone Number:--- 0204124442 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 23 21:09:15 CET 2014 
+Call duration in sec :--- 89
+----------------------------------
+Phone Number:--- 0204124442 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 23 21:08:42 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- 0650293255 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 23 20:56:08 CET 2014 
+Call duration in sec :--- 265
+----------------------------------
+Phone Number:--- +31630373096 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 23 20:51:13 CET 2014 
+Call duration in sec :--- 8
+----------------------------------
+Phone Number:--- +31626758979 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 23 20:49:17 CET 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 23 20:28:50 CET 2014 
+Call duration in sec :--- 13
+----------------------------------
+Phone Number:--- +40746832554 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 23 20:28:11 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31630373096 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 22 21:19:51 CET 2014 
+Call duration in sec :--- 154
+----------------------------------
+Phone Number:--- 0204711510 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 22 16:09:57 CET 2014 
+Call duration in sec :--- 270
+----------------------------------
+Phone Number:--- +12126866886 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 21 17:07:11 CET 2014 
+Call duration in sec :--- 349
+----------------------------------
+Phone Number:--- +31206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 21 09:20:56 CET 2014 
+Call duration in sec :--- 42
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Mar 20 21:32:31 CET 2014 
+Call duration in sec :--- 127
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 17 20:05:11 CET 2014 
+Call duration in sec :--- 1197
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 17 19:46:02 CET 2014 
+Call duration in sec :--- 259
+----------------------------------
+Phone Number:--- +31626758979 
+Call Type:--- INCOMING 
+Call Date:--- Sun Mar 16 17:12:49 CET 2014 
+Call duration in sec :--- 24
+----------------------------------
+Phone Number:--- +31626758979 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 16 17:12:07 CET 2014 
+Call duration in sec :--- 4
+----------------------------------
+Phone Number:--- +31626758979 
+Call Type:--- MISSED 
+Call Date:--- Sun Mar 16 16:30:41 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31626758979 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 16 15:59:20 CET 2014 
+Call duration in sec :--- 9
+----------------------------------
+Phone Number:--- +31630151800 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 16 12:23:52 CET 2014 
+Call duration in sec :--- 389
+----------------------------------
+Phone Number:--- +31622553280 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 15 19:56:49 CET 2014 
+Call duration in sec :--- 22
+----------------------------------
+Phone Number:--- +14152185758 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 15 19:54:51 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31630151800 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 15 17:54:38 CET 2014 
+Call duration in sec :--- 44
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Fri Mar 14 22:25:33 CET 2014 
+Call duration in sec :--- 95
+----------------------------------
+Phone Number:--- 0206186554 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 14 22:10:54 CET 2014 
+Call duration in sec :--- 26
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 14 18:15:37 CET 2014 
+Call duration in sec :--- 19
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Fri Mar 14 18:03:44 CET 2014 
+Call duration in sec :--- 77
+----------------------------------
+Phone Number:--- -1 
+Call Type:--- INCOMING 
+Call Date:--- Fri Mar 14 16:43:28 CET 2014 
+Call duration in sec :--- 421
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 14 16:13:32 CET 2014 
+Call duration in sec :--- 7
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- MISSED 
+Call Date:--- Thu Mar 13 20:35:33 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 10 20:07:52 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 10 19:42:00 CET 2014 
+Call duration in sec :--- 1527
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 10 19:06:32 CET 2014 
+Call duration in sec :--- 1012
+----------------------------------
+Phone Number:--- 0883119898 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 17:46:13 CET 2014 
+Call duration in sec :--- 65
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sat Mar 08 17:43:34 CET 2014 
+Call duration in sec :--- 83
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sat Mar 08 17:24:58 CET 2014 
+Call duration in sec :--- 617
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 17:17:29 CET 2014 
+Call duration in sec :--- 67
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sat Mar 08 17:07:57 CET 2014 
+Call duration in sec :--- 88
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- MISSED 
+Call Date:--- Sat Mar 08 17:04:52 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 16:55:47 CET 2014 
+Call duration in sec :--- 194
+----------------------------------
+Phone Number:--- 0610888362 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 16:54:46 CET 2014 
+Call duration in sec :--- 36
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 16:30:32 CET 2014 
+Call duration in sec :--- 630
+----------------------------------
+Phone Number:--- 0883119898 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 14:44:11 CET 2014 
+Call duration in sec :--- 31
+----------------------------------
+Phone Number:--- +4915202402547 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 12:49:59 CET 2014 
+Call duration in sec :--- 970
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 12:49:13 CET 2014 
+Call duration in sec :--- 2
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 08 12:44:44 CET 2014 
+Call duration in sec :--- 155
+----------------------------------
+Phone Number:--- +31630151800 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Mar 07 19:10:50 CET 2014 
+Call duration in sec :--- 9
+----------------------------------
+Phone Number:--- +31624001200 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Mar 06 15:17:42 CET 2014 
+Call duration in sec :--- 551
+----------------------------------
+Phone Number:--- +31624001200 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Mar 06 15:17:04 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +4369918217835 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Mar 05 23:12:43 CET 2014 
+Call duration in sec :--- 854
+----------------------------------
+Phone Number:--- +31630151800 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Mar 05 14:36:13 CET 2014 
+Call duration in sec :--- 92
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 03 23:09:50 CET 2014 
+Call duration in sec :--- 73
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Mar 03 17:07:55 CET 2014 
+Call duration in sec :--- 1492
+----------------------------------
+Phone Number:--- -1 
+Call Type:--- MISSED 
+Call Date:--- Sun Mar 02 19:47:35 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31628356391 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Mar 02 13:02:12 CET 2014 
+Call duration in sec :--- 603
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 01 23:24:13 CET 2014 
+Call duration in sec :--- 65
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- INCOMING 
+Call Date:--- Sat Mar 01 18:59:48 CET 2014 
+Call duration in sec :--- 59
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 01 18:59:07 CET 2014 
+Call duration in sec :--- 6
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Mar 01 18:41:55 CET 2014 
+Call duration in sec :--- 82
+----------------------------------
+Phone Number:--- +31621144831 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Feb 28 21:28:43 CET 2014 
+Call duration in sec :--- 77
+----------------------------------
+Phone Number:--- +31630151800 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Feb 28 19:29:51 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31621144831 
+Call Type:--- MISSED 
+Call Date:--- Fri Feb 28 19:25:55 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31630151800 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Feb 28 19:13:51 CET 2014 
+Call duration in sec :--- 43
+----------------------------------
+Phone Number:--- +31630151800 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Feb 28 18:55:16 CET 2014 
+Call duration in sec :--- 8
+----------------------------------
+Phone Number:--- +491631706797 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 26 20:29:19 CET 2014 
+Call duration in sec :--- 230
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Wed Feb 26 20:06:30 CET 2014 
+Call duration in sec :--- 124
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- MISSED 
+Call Date:--- Wed Feb 26 19:59:30 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- MISSED 
+Call Date:--- Wed Feb 26 19:58:01 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 26 19:56:20 CET 2014 
+Call duration in sec :--- 552
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 26 19:55:46 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +491631706797 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 26 19:45:57 CET 2014 
+Call duration in sec :--- 26
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 26 18:56:31 CET 2014 
+Call duration in sec :--- 4
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 25 20:22:39 CET 2014 
+Call duration in sec :--- 399
+----------------------------------
+Phone Number:--- 0647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Feb 21 18:29:53 CET 2014 
+Call duration in sec :--- 123
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Feb 20 23:23:17 CET 2014 
+Call duration in sec :--- 38
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 19 19:58:56 CET 2014 
+Call duration in sec :--- 5
+----------------------------------
+Phone Number:--- +4915202402547 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Feb 17 21:04:20 CET 2014 
+Call duration in sec :--- 1177
+----------------------------------
+Phone Number:--- +4915202402547 
+Call Type:--- INCOMING 
+Call Date:--- Mon Feb 17 21:03:09 CET 2014 
+Call duration in sec :--- 23
+----------------------------------
+Phone Number:--- +4915202402547 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Feb 17 21:02:18 CET 2014 
+Call duration in sec :--- 1
+----------------------------------
+Phone Number:--- +4915202402547 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Feb 17 20:57:36 CET 2014 
+Call duration in sec :--- 3
+----------------------------------
+Phone Number:--- +31208100828 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Feb 16 20:21:28 CET 2014 
+Call duration in sec :--- 79
+----------------------------------
+Phone Number:--- -1 
+Call Type:--- INCOMING 
+Call Date:--- Sat Feb 15 03:42:57 CET 2014 
+Call duration in sec :--- 39
+----------------------------------
+Phone Number:--- 0207777777 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Feb 15 03:38:58 CET 2014 
+Call duration in sec :--- 72
+----------------------------------
+Phone Number:--- +319007490499 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Feb 14 14:42:36 CET 2014 
+Call duration in sec :--- 484
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Thu Feb 13 19:40:30 CET 2014 
+Call duration in sec :--- 90
+----------------------------------
+Phone Number:--- 0206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 12 14:55:56 CET 2014 
+Call duration in sec :--- 685
+----------------------------------
+Phone Number:--- 0206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 12 12:48:54 CET 2014 
+Call duration in sec :--- 15
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 11 20:41:08 CET 2014 
+Call duration in sec :--- 4
+----------------------------------
+Phone Number:--- 0206659828 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 11 16:31:15 CET 2014 
+Call duration in sec :--- 17
+----------------------------------
+Phone Number:--- 0206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 11 16:24:55 CET 2014 
+Call duration in sec :--- 156
+----------------------------------
+Phone Number:--- 0206655735 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 11 16:24:13 CET 2014 
+Call duration in sec :--- 19
+----------------------------------
+Phone Number:--- 0206653893 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 11 15:49:08 CET 2014 
+Call duration in sec :--- 111
+----------------------------------
+Phone Number:--- 0206653893 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 11 13:50:25 CET 2014 
+Call duration in sec :--- 284
+----------------------------------
+Phone Number:--- 0206653893 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 11 12:45:51 CET 2014 
+Call duration in sec :--- 17
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Feb 11 09:46:20 CET 2014 
+Call duration in sec :--- 71
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Feb 08 18:16:14 CET 2014 
+Call duration in sec :--- 1666
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- INCOMING 
+Call Date:--- Sat Feb 08 18:15:34 CET 2014 
+Call duration in sec :--- 13
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Feb 08 18:15:04 CET 2014 
+Call duration in sec :--- 5
+----------------------------------
+Phone Number:--- +4971125857517 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Feb 08 18:14:17 CET 2014 
+Call duration in sec :--- 8
+----------------------------------
+Phone Number:--- -1 
+Call Type:--- INCOMING 
+Call Date:--- Sat Feb 08 17:00:54 CET 2014 
+Call duration in sec :--- 30
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Feb 07 23:11:27 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Feb 07 20:19:34 CET 2014 
+Call duration in sec :--- 58
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Feb 06 20:28:22 CET 2014 
+Call duration in sec :--- 59
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Feb 06 19:44:33 CET 2014 
+Call duration in sec :--- 81
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 05 19:26:08 CET 2014 
+Call duration in sec :--- 64
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- MISSED 
+Call Date:--- Wed Feb 05 19:18:54 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Feb 05 19:15:24 CET 2014 
+Call duration in sec :--- 5
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Feb 02 21:29:46 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Jan 30 19:12:50 CET 2014 
+Call duration in sec :--- 568
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Jan 30 09:35:01 CET 2014 
+Call duration in sec :--- 349
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Jan 30 09:32:48 CET 2014 
+Call duration in sec :--- 126
+----------------------------------
+Phone Number:--- 864236245 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Jan 30 09:32:35 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Jan 29 17:50:27 CET 2014 
+Call duration in sec :--- 110
+----------------------------------
+Phone Number:--- +31654501233 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Jan 28 16:25:51 CET 2014 
+Call duration in sec :--- 116
+----------------------------------
+Phone Number:--- +31624001233 
+Call Type:--- OUTGOING 
+Call Date:--- Tue Jan 28 16:23:12 CET 2014 
+Call duration in sec :--- 83
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- MISSED 
+Call Date:--- Mon Jan 27 20:13:32 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Jan 27 19:12:02 CET 2014 
+Call duration in sec :--- 1189
+----------------------------------
+Phone Number:--- +31625590821 
+Call Type:--- OUTGOING 
+Call Date:--- Mon Jan 27 18:41:25 CET 2014 
+Call duration in sec :--- 52
+----------------------------------
+Phone Number:--- 0647897185 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Jan 26 19:30:01 CET 2014 
+Call duration in sec :--- 8
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Jan 26 18:35:29 CET 2014 
+Call duration in sec :--- 47
+----------------------------------
+Phone Number:--- +31647093351 
+Call Type:--- INCOMING 
+Call Date:--- Sun Jan 26 12:34:38 CET 2014 
+Call duration in sec :--- 130
+----------------------------------
+Phone Number:--- 0647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Jan 26 12:33:22 CET 2014 
+Call duration in sec :--- 10
+----------------------------------
+Phone Number:--- 0208908055 
+Call Type:--- OUTGOING 
+Call Date:--- Sun Jan 26 10:25:50 CET 2014 
+Call duration in sec :--- 116
+----------------------------------
+Phone Number:--- +31641756252 
+Call Type:--- MISSED 
+Call Date:--- Fri Jan 24 19:38:18 CET 2014 
+Call duration in sec :--- 0
+----------------------------------
+Phone Number:--- +31641756252 
+Call Type:--- OUTGOING 
+Call Date:--- Fri Jan 24 18:44:26 CET 2014 
+Call duration in sec :--- 53
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Jan 23 21:13:48 CET 2014 
+Call duration in sec :--- 1142
+----------------------------------
+Phone Number:--- 09007490499 
+Call Type:--- OUTGOING 
+Call Date:--- Thu Jan 23 13:24:49 CET 2014 
+Call duration in sec :--- 750
+----------------------------------
+Phone Number:--- 0647093351 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Jan 22 20:17:12 CET 2014 
+Call duration in sec :--- 6
+----------------------------------
+Phone Number:--- 0208908055 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Jan 18 17:23:00 CET 2014 
+Call duration in sec :--- 115
+----------------------------------
+Phone Number:--- +40742606038 
+Call Type:--- OUTGOING 
+Call Date:--- Sat Jan 18 16:40:17 CET 2014 
+Call duration in sec :--- 349
+----------------------------------
+Phone Number:--- +31642316115 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Jan 15 17:11:18 CET 2014 
+Call duration in sec :--- 33
+----------------------------------
+Phone Number:--- 0356265544 
+Call Type:--- OUTGOING 
+Call Date:--- Wed Jan 15 17:05:24 CET 2014 
+Call duration in sec :--- 295
+----------------------------------

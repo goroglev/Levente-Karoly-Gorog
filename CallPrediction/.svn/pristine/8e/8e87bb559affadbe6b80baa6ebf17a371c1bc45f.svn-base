@@ -1,0 +1,13 @@
+package com.avg.innovation.call_prediction;
+
+import java.text.DecimalFormat;
+
+public class Format {
+	
+	/**
+	 * formatting floating point numbers with 3 decimals
+	 */
+	
+	public static DecimalFormat df3 = new DecimalFormat("#.###");
+
+}

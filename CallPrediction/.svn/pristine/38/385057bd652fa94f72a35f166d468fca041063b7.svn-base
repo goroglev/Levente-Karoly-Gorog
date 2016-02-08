@@ -1,0 +1,59 @@
+package com.avg.innovation.call_prediction;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+/**
+ * computes outgoing call statistics based on the phone number from the previous call (single state)
+ *  
+ * @author adminuser
+ *
+ */
+public class SingleStateCallStats extends CallStats {
+
+	public SingleStateCallStats(List<CallRecord> callRecords) {
+		super(callRecords);
+	}
+	
+	@Override
+	/**
+	 * @return call statistics for each distinct call (unique by phone no.) of {@link CallType} from the call log, i.e. the frequency and probability 
+	 * of all outgoing calls following each distinct call.   
+	 */
+	public Map<String, Map<String, FreqProb>> compute(CallType callType) {
+		Map<String, Map<String, FreqProb>> stats = new HashMap<String, Map<String, FreqProb>>();
+		Map<String, Integer> totalNoOfCallsAfterThisPhoneNo = new HashMap<String, Integer>();
+		if (callRecords.isEmpty()) return stats;
+		String lastCall = null;
+		for (CallRecord callRecord : callRecords) {			
+			if (CallType.OUTGOING.equals(callRecord.type) && lastCall != null) {
+				Map<String, FreqProb> callStats = stats.get(lastCall);
+				if (callStats == null) {
+					callStats = new HashMap<String, FreqProb>();
+					stats.put(lastCall, callStats);
+					totalNoOfCallsAfterThisPhoneNo.put(lastCall, 0);
+				}
+				FreqProb freqProb = callStats.get(callRecord.phoneNo);
+				if (freqProb == null) {
+					freqProb = new FreqProb(0,0.0);
+					callStats.put(callRecord.phoneNo, freqProb);
+				}
+				freqProb.freq++;				
+				Integer totalFreq = totalNoOfCallsAfterThisPhoneNo.get(lastCall);
+				totalNoOfCallsAfterThisPhoneNo.put(lastCall, ++totalFreq);
+			} 
+			lastCall = callType.equals(callRecord.type) && callRecord.duration > 7 ? callRecord.phoneNo : null; 
+		}
+		
+		for (Entry<String, Map<String, FreqProb>> statsEntry : stats.entrySet()) {
+//			System.out.println(statsEntry.getKey());
+			for (Entry<String, FreqProb> callProbEntry : statsEntry.getValue().entrySet()) {
+				callProbEntry.getValue().prob = ((double)callProbEntry.getValue().freq) / totalNoOfCallsAfterThisPhoneNo.get(statsEntry.getKey());
+//				System.out.println("\t" + callProbEntry.getKey() + "  " + Format.df3.format(callProbEntry.getValue().prob));
+			}
+		}
+		
+		return stats;
+	}
+}

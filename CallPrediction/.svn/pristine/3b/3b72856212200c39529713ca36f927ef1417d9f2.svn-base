@@ -1,0 +1,7 @@
+* clustering every day
+
+* test clustering (it takes < 1 min on my laptop)
+
+* clustering takes as arg a list of call records / call log file, writes clusters (week / weekend) to two separate files
+* prediction takes week / weekend clusters and outputs phone numbers as strings.
+* how to organize code? two main classes, one for clustering, other for prediction?

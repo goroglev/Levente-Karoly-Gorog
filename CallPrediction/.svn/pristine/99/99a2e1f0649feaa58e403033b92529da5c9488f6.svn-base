@@ -1,0 +1,66 @@
+package com.avg.innovation.call_prediction;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * represents a call record from an exported android call log
+ * 
+ * 
+ * 
+ * @author adminuser
+ *
+ */
+public class CallRecord {
+	
+	private static Pattern[] callRecordPatterns = {
+		Pattern.compile("Phone Number:--- (\\+?-?\\d+)"),
+		Pattern.compile("Call Type:--- ([A-z]+)"),
+		Pattern.compile("Call Date:--- (.+\\d)"),
+		Pattern.compile("Call duration in sec :--- (\\d+)")
+	};
+	
+	private static DateFormat df = new SimpleDateFormat("EEE MMM d HH:mm:ss zzz yyyy");
+	
+	public CallRecord(String[] callRecord) throws Exception {
+		String[] fields = new String[4];
+		for (int i = 0; i < 4; ++i) {
+			Matcher match = callRecordPatterns[i].matcher(callRecord[i]);
+			if (match.find()) {
+				fields[i] = match.group(1);
+			} else throw new Exception("Expected `" + callRecordPatterns[i].pattern() + "`, got `" + callRecord[i] + "`");
+		}
+		CallType callType;
+		try {
+			callType = CallType.valueOf(fields[1]);
+		} catch (IllegalArgumentException e) {
+			callType = null;
+		}
+		
+		this.phoneNo = fields[0];
+		this.type = callType;
+		this.startTime = df.parse(fields[2]);
+		this.duration = Integer.parseInt(fields[3]);
+
+			
+	}
+	
+	public CallRecord(String phoneNo, CallType callType, Date startTime, int duration) {
+		this.phoneNo = phoneNo;
+		this.type = callType;
+		this.startTime = startTime;
+		this.duration = duration;
+	}
+
+	public String phoneNo;
+	
+	public CallType type;
+	
+	public Date startTime;
+	
+	public int duration; // seconds
+
+}
