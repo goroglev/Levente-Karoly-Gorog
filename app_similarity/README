@@ -1,0 +1,7 @@
+The app similarity implementation works as a batch process.
+1. It tokenizes text (app descriptions / app names/ categories/content ratings)
+- run the Tokenizer class w/o arguments, you'll get a usage text
+2. It selects features (keywords in docs w/ high TF-IDF scores)
+- run the FeatureSelector class
+3. For a number of input start nodes (google play apps) it determines the top k most similar ones and calculates a score (cost) by comparing the similar apps determined by the algorithm with a pre-defined set from an orthogonal domain (ubergrid, google's similar suggestions)
+- run the Similar class
