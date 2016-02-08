@@ -1,15 +1,11 @@
 @Görög Levente-Károly, 27 March 2013
 
-This is a command line twitter client interfacing with the Twitter streaming API 
-(http://dev.twitter.com/pages/streaming_api), implemented conform
-eBuddy's assignment for Back-end Java Developer.
-
-This README document is part of the TwitterClient Maven/Eclipse project
-written in Java.
+This is a command line twitter client Maven/Eclipse project interfacing with the Twitter streaming API 
+(http://dev.twitter.com/pages/streaming_api).
 
 Requirements:
 1. Use non-blocking I/O (either direct or through a library)
-2. Use statuses/filter method with a configurable list of keywords (i.e. eBuddy, IM)
+2. Use statuses/filter method with a configurable list of keywords (i.e. IM)
 3. Use json return type
 4. Output incoming status information on the command line
 5. Application should use spring to configure
@@ -26,7 +22,7 @@ I used the HttpComponents HttpAsyncClient (http://hc.apache.org/httpcomponents-a
 for non-blocking HTTP messaging along with my own response consumer
 (com.client.twitter.StatusesFilterResponseConsumer) implementation.
 
-2. Use statuses/filter method with a configurable list of keywords (i.e. eBuddy, IM)
+2. Use statuses/filter method with a configurable list of keywords (i.e. IM)
 This refers to the https://stream.twitter.com/1.1/statuses/filter.json endpoint.
 Requests sent to this service should be authorized conform the OAuth authorization scheme.
 I wrote a wrapper on the top of the oauth-signpost (http://code.google.com/p/oauth-signpost/)
