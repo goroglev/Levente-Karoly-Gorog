@@ -1,6 +1,0 @@
-import sys
-
-import A
-
-class B(A):
-    pass

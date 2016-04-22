@@ -1,8 +1,0 @@
-import sys
-
-class A:
-    """Check module names programatically in base and inherited class"""
-
-    def __init__(self):
-        print(__name__)
-        self.module = sys.modules[A.__module__]
