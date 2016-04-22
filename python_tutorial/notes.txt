@@ -1,0 +1,1902 @@
+ https://docs.python.org/3/tutorial/index.html
+
+Python quirks
+*************
+
+Ctrl-Z - exit the interpreter with a 0 return status
+
+In interactive mode, the last printed command is assigned to the _ variable.
+
+'print()' omits quotes and interprets escaped and special chars before
+printing them.
+
+eval(<python_code>) 
+>>> eval("print('test')")
+test
+
+eval(input(<input>))
+>>> eval(input())
+sum(a for a in range(0, 101, 5))
+1050
+>>>
+
+Unpacking elements from iterables of arbitrary length (using *)
+---------------------------------------------------------------
+>>> record = ('Dave', 'dave@gmail.com', '+201220012', '+201340011')
+>>> name, email, *phone_numbers = record
+>>> phone_numbers
+['+201220012', '+201340011']
+
+>>> line = 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false'
+>>> uname, *fields, homedir, sh = line.split(':')
+>>> (uname, homedir, sh)
+('nobody', '/var/empty', '/usr/bin/false')
+
+>>> items = [1, 10, 7, 4, 5, 9]
+>>> def sum(items):
+...     head, *tail = items
+...     return head + sum(tail) if tail else head
+...
+>>> sum(items)
+36
+
+!!! Recursion isn't a strong py feature due to the inherent recursion limit: 
+    `sys.getrecursionlimit()`
+    Windows 2000 (on my Dell Latitude E7440, Windows 10 it is 1000)
+    Linux 2147483647 (2^31 - 1)
+    Mac, on my MacBook Pro the default limit is 1000
+
+Short Circuit Operators
+-----------------------
+a < b == c
+'' or 'Trondheim' or 'Oslo' -> 'Trondheim'
+
+Misc
+----
+- In python, assignment cannot occur inside expressions:
+
+>>> b = 2
+>>> a = (b = 2) * 2
+  File "<stdin>", line 1
+    a = (b = 2) * 2
+           ^
+SyntaxError: invalid syntax
+
+- Explicit name binding syntax (`as`) has been added in python 2.6.
+
+- `else` clauses on loops - if the loop terminates 'normally' (not by a 'break' statement), the else clause is executed
+
+- For all functions operating on mutable data structure function arguments in Python, a None is returned - by design principle.
+
+`
+def add_new_field(list_):
+    for el in list_: # el is NOT of a primitive data type but of an object.
+        el.newfield = (el.a * el.b) ^ .5
+    return None
+`
+
+CODING STYLE: https://www.python.org/dev/peps/pep-0008/
+************
+    ||
+Coding style: Python Enhancement Proposal (PEP) 8 emerged as a style guide
+
+"Readability counts": Code is read more often than written.
+
+"A Foolish Consistency is the Hobgoblin of Little Minds".
+---------------------------------------------------------
+Internal Consistency is most important. Rank of consistency importance: 
+    1) within a module, class, method
+    2) within the project
+    3) adhering to this PEP
+
+Indentation
+-----------
+foo = long_function_name(var1,
+                         var2, var3, var4) # continuation lines should align wrapped elements vertically
+def long_function_name( # more indentation included to distinguish
+        var1, var2,
+        var3, var4):
+    print(var1)
+
+foo = long_function_name( # hanging indents should add a level; may be indented other than 4 spaces.
+    var1, var2,
+    var3, var4)
+
+Closing brace/bracket/parenthesis may be lined up under the first character
+which starts the multi-line construct. E.g.
+
+my_list = [
+    1, 2, 3,
+    4, 9, 7
+]
+
+Line length
+-----------
+Wrap lines so they don't exceed 79 chars. 
+This will help users with small displays and also makes possible to have multiple code files side-by-side on large displays.
+
+Imports
+------
+imports should usually be on separate lines, e.g.:
+
+import os
+import sys
+
+but it's okay to say:
+
+from subprocess import Popen, PIPE
+
+Imports are always put on the top of the file, after module comments /
+docstrings and before module globals and constants.
+
+1) Std lib imports
+2) 3rd party imports
+3) local lib/app imports
+
+A blank line between each group.
+
+Absolute imports are recommended.
+
+Naming Styles
+-------------
+It helps to recognize the naming style used, independently from what it is
+used for.
+
+_single_leading_underscore - weak "internal use" indicator. E.g. `from <module> import *` will not import names starting w/ single underscore.
+single_trailing_underscore_ - to avoid conflicts w/ Python kwds
+__double_leading_underscore - when naming a class attribute, invokes name mangling, e.g. inside class `FooBar`, `__boo` becomes `_FooBar__boo`. 
+    This is designed to avoid name clashes within subclasses and it is meant to be used only in classes designed to be subclassed.
+__double_leading_trailing_underscore__ - "magic" obj. or attribs. E.g. __init__, __import__ or __file__. Never invent such name, use them as documented.
+
+Naming Conventions
+------------------
+ClassName 
+    - CamelCase. 
+    - builtin names use a diff. convention (one word or two words run together).
+    - CamelCase is only used for exception names and builtin constants.
+NameError (Exception names)
+    - use the `Error` suffix if the exception is actually an error
+Function and Method Arguments
+    - always use `cls` as the first arg for class methods
+method_name and _instance_variable
+    - use a _leading_underscore for non-public methods and instance vars.
+CONSTANT_VALUE
+
+Designing for Inheritance
+-------------------------
+https://www.python.org/dev/peps/pep-0008/#id40
+    
+Programming Recommendations
+---------------------------
++ use ''.join() for in-place string concatenation instead of a += b. ''.join()
+ensures linear time concatenation.
++ comparisons to singletons like `None` should always be done w/ the `is` or
+`is not` operator (preferred to `not...is`)
++ Yes: `def f(x): return x ** 2`. No: `f = lambda x: x ** 2`
++ Object type comparisons should always use `isinstance` instead of comparing
+types directly.
++ For sequences (strings, lists, tuples) use the fact that empty sequences are
+`False`: `if seq:` or `if not seq:`
+
+Docstrings
+----------
+my_function.__doc__
+
++ use docstrings for all public modules, classes, functions and methods.
+    - for non-public methods, desc in a comment what the method does, in the
+      first line after the def line.
+    - in multiline docstrings, the closing """ should be on its own separate
+      line (For one-liners, still use """, but the closing one is on the same line).
+        * first line summary: starts with a capital and ends with a .
+        * then a blank line
+        * then a paragraph with the description
++ `help(<module>)` - returns an extensive man page created from the module's docstrings
+
+Misc
+----
++ use spaces between operators and after commas, but don't use them directly after a bracketing construct: e.g. a = 2 * (d + c)
+    - if operators w/ diff. priorities are used, consider adding whitespace
+      around operators w/ lowest priority, e.g. x*x + y*y, NOT x * x + y * y
+    - don't use spaces around the `=` indicating a def. param value or kwarg.
++ put comments on their separate lines
+    - !!!UPDATE COMMENTS: comments which contradict the code are worse than no comments
+    - use complete sentences, ending w/ a period (unless comment is short).
+    - two spaces after a sentence-ending period.
+    - each line in block comments start with an # followed by a space.
+    - paragraphs are separated by an # followed by empty line.
++ surround class definitions and top level functions w/ 2 empty lines. 
+    - Method definitions within a class one line. 
+    - Larger blocks of code inside a file or logical sections (sparingly) 1 line.
+
+DEFINING PYTHON SOURCE CODE ENCODINGS
+*************************************
+https://www.python.org/dev/peps/pep-0263/
+
+A "magic" comment must be inserted into the file,
+either first or second line:
+
+1. # coding=<encoding>
+2. # -*- coding: <encoding> -*-
+3. # vim: set fileencoding=<encoding> :
+
+Generally, it must match the regex 'coding[=:]\s*([-\w.]+)'
+
+FUNCTIONS
+*********
+    ||
+def test():
+    """optional first line in function body: documentation string (docstring)"""
+
+- a function definition introduces the function name in the current symbol table
+- the value of the function name has a type which is recognized by the
+  interpreter as a user-defined function.
+- functions can be assigned to new names
+
+def boilerplate(project_name, *arguments (tuple), **keywords (dict))
+    - unpack args out of a list or tuple: args=[3,5]; range(*args)
+    - the '**' can be used to unpack dict keyword args
+    - NB: (*args, **kwds)
+
+TASK:
+a) What is the diff. between functions and methods?
+b) What are annotated functions?
+    /\
+See: a) http://stackoverflow.com/questions/20981789/difference-between-methods-and-functions
+     b) Annotated funcs: having special syntax for adding arbitrary metadata
+to python functions (callable objects): https://www.python.org/dev/peps/pep-3107
+
+LAMBDA EXPRESSIONS
+******************
+    ||
+lambda expression: just syntactic sugar for normal func def
+anonymous func., allows only one expression
+lambda x:x+3
+pairs = [(1,'one'), (2,'two'), (3,'three'), (4,'four')]
+pairs.sort(key=lambda pair:pair[1])
+
+Conditional ternary operator
+----------------------------
+`a if test else b`
+
+STRINGS
+*******
+    ||
+Adding an r before the first quote of a string will cause it to be interpreted as raw string (escaped chars will not be interpreted)
+
+3 * 'al' + 'fel'
+'*' * 39
+
+'Py' 'thon'
+line = ('put several lines within parenthesis'
+ 'to join them together')
+
+'together' in line # fascinating
+
+isdecimal()
+isdigit() # various unicode chars e.g. '\u00B2'
+
+Use string methods instead of the string module. They are much faster and
+share the same API w/ unicode strings.
+
+Indices and slicing
+-------------------
+[start:end:step]
+
+word='Python'
+word[-1] -> 'n' # negative indices start counting from the right
+
+slicing: word[2:5] -> 'tho' (end index not included)
+         word[-2:] -> 'on'
+word[1:4:-1] -> 'hty' # doesn't work because of neg. step 
+
+string and all other built-in sequence types can be indexed and sliced.
+the slice notation makes a copy of the sequence, e.g. _tuple[:] creates a copy
+of _tuple.
+
+# handle mess of hardcoded slice indices
+>>> s = 'holnap tollas party'
+>>> vedo = slice(7, 13)
+'tollas'
+
+del a[:] - where a is a list
+
+Python strings cannot be changed. They are immutable. 
+E.g. word[2]='L' results in an error.
+
+Use `''.startswith()` or `''.endswith()` instead of string slicing to check
+for suffixes or prefixes. They are cleaner and less error-prone.
+
+TASK:
+a) get multiple elements from array knowing their indices (no list comprehension)
+    /\
+See: http://stackoverflow.com/questions/18272160/access-multiple-elements-of-list-knowing-their-index
+python doesn't have standard support for this, like R.
+
+Unicode
+-------
+Unicode: one ordinal for every char in every modern or ancient text
+A lowercase 'u' in front of the string indicates Unicode string: u'Hello\u0020World'
+<unicode string>.encode('utf-8') - to encode a unicode string into an 8-bit string
+<8-bit string>.decode('utf-8') - to decode an 8-bit string (convert it to
+unicode using encoding)
+
+TASK:
+a) strip html from string in the most compact code possible
+b) convert all punctuations to space in a str (use string.punctuation,
+str.maketrans(<str1>, <str2>), str.translate(<translation_table>)
+    /\
+See: libs/HtmlTools, libs/StringTools, strings
+`io.StringIO` class. Acts like a file-like object, supporting writes. 
+For efficient string concatenation, one way is to write every string part to this file-like object.
+At the end, call on it the `getvalue()` method. see https://waymoot.org/home/python_string/
+
+Regular expressions (regex)
+***************************
+    |
+https://docs.python.org/3/library/re.html
+
+'\' indicates special form or use of special chars in regex w/o their
+special meaning. This collides w/ the use of '\' in python string literals. 
+Use raw string notation for defining regex, r'str' where nothing in `str` is interpreted. 
+Raw string notation keeps regular expressions sane.
+
+Both patterns and strings to be searched can be Unicode or 8-bit strings, but
+they cannot be mixed.
+
+Most regex operations are available as `re` module level functions. They are
+shortcuts which don't require a compiled regex object first, but miss on some
+of the fine-tuning params.
+
+Most of the non-trivial applications always use the compiled form.
+For simple capabilities, string funcs are preferred since they can be read and
+debugged easier, E.g. "tea for too".replace("too", "two")
+
+Special chars
+-------------
+Escaping special chars does a pretty good job.
+
+'.' - w/ DOTALL flags, this also matches NEWLINE.
+'^', '$' - diff. behavior in MULTILINE mode
+'.*?', '.+?' - non-greedy
+'{m, n}' - either `m` or `n` may be omitted.
+'[]' - special chars lose their meaning inside sets, e.g. 
+    [(.*)?] - no spec. meaning
+    [a-] vs [a\-b] '-' escaped ('\-') or 1st or last char in the set
+    [^^] - `^` has no special meaning if not first char in the set
+    []bla] or [b\]a]
+
+(?aiLmsux) - include flags as part of the regular expression, instead of
+providing them as the FLAG argument to re.compile
+    a - ASCII only
+    u - unicode
+    i - case insensitive; re.IGNORECASE / re.I
+    l - locale dependent
+    m - multiline
+    s - dot matches all
+    x - verbose
+        E.g. decNumRegex = re.compile(r"""\d+   # the integral part
+                                          \.    # dot
+                                          \d*   # fractional digits""",
+                           re.VERBOSE)
+                           vs.
+             decNumRegex2 = re.compile(r"\d+\.\d*")
+
+(?:...) - non-capturing version of regular parenthesis.
+
+(?P<name>...) - named group. 
+    E.g. (?P<quote>['"]).*(?P=quote)
+    Ways to reference:
+        1) (?P=name)
+        2) \1
+        3) m.group('quote') # `m` match obj
+        4) in the `repl` arg of `re.sub()` as \g<quote>, \g<1>
+
+(?#...) - the contents of the parenthesis are simply ignored.
+
+(?=...) - matches if ... matches next, but doesn't consume any of the string.
+E.g. 'Isaac (?=Asimov)' will match 'Isaac' only it is followed by ' Asimov'.
+
+(?!...) - matches if ... doesn't match next. 
+E.g. 'Isaac (?!Asimov)' will only match 'Isaac' if it's not followed by
+'Asimov'.
+
+(?<=...) - look behind for '...' ending at current position. Only patterns of
+fixed lengths are allowed.
+
+(?<!...) - matches if the current pos is not perceded by '...'
+
+(?(id/name)yes-pattern|no-pattern) - apply `yes-pattern` if group w/ give `id`
+or `name` exists, `no-pattern` otherwise.
+E.g. (<)?[\w._]+@\w+(?:\.\w+)+(?(1)>|$)
+
+\number - matches the same as the group of the same `number`.
+E.g. '(.+?) \1' matches 'the the' or '55 55' but not 'thethe'
+
+\b - matches the empty string only when it is at the beginning or end
+of a word. It is defined as a boundary between \w and \W.
+E.g. r'\bfoo\b' matches 'foo bar', 'foo', but not 'foobar' or 'foo4'.
+
+\B - matches the empty string only when it is NOT the beginning or end of a
+word.
+E.g. r'\Bfoo\b' matches 'alfoo.', 'testfoo)' but not 'test foo'
+
+\d - matches any decimal digit, for ASCII that is '[0-9]'
+It doesn't match u'\u00B2', perhaps because that's not a decimal.
+
+\D - matches any char which is not a decimal digit (the opposite of
+\d). For ASCII, that is [^0-9]
+
+\s - matches whitespace character. For ASCII, that is [ \t\n\r\f\v].
+
+\S - matches non-whitespace char. For ASCII, that is [^ \t\n\r\f\v].
+
+\w - any word char including numbers and underscore. ASCII: [a-zA-Z0-9_]
+
+`re` module contents
+--------------------
+re.match(pattern, string, flags=0)
+    should match the beginning of the string
+
+re.search(pattern, string, flags=0)
+    shouldn't necessarily match the beginning of the string
+
+re.fullmatch
+
+re.split(pattern, string, maxsplit=0, flags=0)
+    - doesn't currently split on an empty pattern match
+    
+re.findall - non-overlapping matches
+    - if match contains multiple groups, they are returned as a tuple, whereas
+      the func. itself returns a list
+
+re.finditer - non-overlapping matches
+
+re.sub(pattern, repl, string, count=0, flags=0)
+    - backreferences, such as \1 will be replaced by the content of the
+      referenced group matched on string
+    - if `repl` is a func, it is called for every non-overlapping occurence of
+      pattern.
+    - '\1' vs '\g<1>' in `repl`: '\g<1>0' isn't ambiguous in contrast to '\10'
+re.subn
+    - same as `re.sub` except that it returns a tuple (new_string,
+      nr_subs_made)
+re.escape(string)
+    - escape all ASCII letters and numbers 
+
+re.purge()
+    - clear the regular exp. cache
+
+match() vs search()
+-------------------
+Even in multiline mode, `match()` matches '^' only at the beginning of string
+and NOT the beginning of each line, in contrast to `search()`.
+
+TASK: 
+a) split 'Words, words, words.' by non-word characters.
+b) include the part inbetween words in the resulting list.
+c) split '0a3B9' by non-digit
+d) split '...words, words...' so that at beginning and end an empty
+string will be included in the result list
+e) replace every two dashes ('--') by one ('-') and every single dash (' ') w/
+a space (' ') in the following string: 'pro----gram-files', using `re.sub` and
+a function for `repl`
+f) extract a list of words starting w/ 'f' from this sentence: 'which foot or hand fell fastest'
+g) replace every repetition (the same word twice) w/ the word just one time:
+'cat in the the drawers'
+        /\ 
+See: a)-g): regex.py
+
+Regular Expression Objects
+--------------------------
+`regex.search(string, [pos[, endpos]])`
+    - `match`, `fullmatch`, `findall`, `finditer`
+
+`regex.groups` # no groups
+`regex.flags`  # flags used at `re.compile`
+`regex.groupindex` # dict mapping sym group names defined by (?P<name>) to
+group numbers.
+`regex.pattern` # the pattern used to compile the regex
+
+Match Objects
+------------
+They always have a boolean value of True.
+match = re.search(pattern, string)
+if match:
+    # do sth
+
+match.expand(template)
+    - backslash substitution on the template string (e.g. \n, \1, \g<1>
+
+match.group([group1, ...])
+    - if groupN == 0, entire match is returned.
+    - IndexError if groupN is negative or > the no. of groups defined in
+      pattern
+    - if multiple group indices are specified (and all valid), results are
+      returned in a tuple
+    - if a group matches multiple times, only the last match is accessible.
+
+match.groups()
+    - returns a tuple containing all the subgroups of the match 
+
+match.groupdict()
+    - returns a mapping of all the named subgroups of the match, keyed by the
+      group names
+
+match.start([group]), match.end([group])
+    - `group` defaults to 0
+    - `m.group(g)` is equal to `m.string[m.start(g):m.end(g)]
+
+match.span([group])
+    - for a match `m`, return the 2-tuple (`m.start(group)`, `m.end(group)).
+    - if `group` didn't contribute to the match, this will be (-1, -1)
+
+match.pos, match.endpos
+    - passed to the `search()` or `match()` method of the regex object
+
+match.lastindex
+    - the index of the last capturing group or `None` if no group was captured
+      at all.
+
+match.lastgroup
+    - the <name> of the last capturing group or `None`
+
+match.re
+    - the regex object whose `search()` or `match()` method produced this
+      match instance
+
+match.string
+    - the string passed to `search()` or `match()`.
+
+TASK: 
+f) match the first and last name of Malcolm Reynolds. Using string group id's.
+g) match every two char of 'hogyha szel fujna hozzam' w/ the same group and retrieve the first
+group
+h) remove 'removethis' from e-mail addresses
+i) represent a poker hand as a 5-card string and detect a pair (if any)
+j) Extract filename and numbers from the log entry '/usr/sbin/sendmail - 0
+errors, 4 warnings'
+k) parse file 'phonebook.raw' into a phonebook, with each entry containing
+first name, last name, phone_no, house_no, street and print it in a nicely
+formatted way.
+l) demonstrate using sub() with a function to "munge" text, or randomize the order of all the characters in each word of a sentence except for the first and last characters
+m) find all adverbs and their positions in a text
+n) write a simple tokenizer. Build on the example given at https://docs.python.org/3/library/re.html#writing-a-tokenizer
+    /\
+See: f-h) regex.py i) pokerpair.py k) phonebook.py l) munge.py m) adverbs.py
+n) tokenizer.py
+
+
+LISTS
+*****
+    ||
++ lists are mutable.
++ there's also an array type (https://docs.python.org/3/library/array.html)
+for efficient storing of numerical values:
+    char, unsigned char, unicode, short, unsigned short, int, unsigned int, long, unsigned long, long long, unsigned long long, float, double
++ range() generates lists containing arithmetic progressions
+    range(<start>[, <stop>[, <step>]])
+
+Lists as stacks
+---------------
++ LIFO: last-in, first-out: The last one to be added is the first to be retrieved.
+    - x.append(); x.pop()
++ Using lists as queues (FIFO: first-in, first-out) is not efficient.
+    - (at append(0,) and pop(0) all elements are shifted by one)
++ use instead collections.deque
+
+List comprehensions
+-------------------
+squares = [x**2 for x in range(10)]
+
+pairs = [(x,y) for x in [1, 2, 3] for y in [4 1 5] if x != y]
+
+# flatten a list
+vec = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+[num for elem in vec for num in elem]
+
+from math import pi
+[str(round(pi, i)) for i in range(1, 6)]
+
+Nested list comprehensions
+--------------------------
+matrix = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ]
+
+[[row[i] for row in matrix] for i in range(3)]
+
+zip(*iterables) - return a list of tuples of equal length as a transpose of the iterables. Length is the length of the shortest iterable element from iterables.
+                - return a zip obj
+                - built-in class
+
+del - delete items (single element or range) from a list, or an entire variable:
+    a = [1, 24, 32.5, 's', 2]
+    del a[2:4] -> a == [1, 24, 2]
+    del a
+
+
+TUPLES
+******
+    |
+tuples are a sequence of comma-separated items. 
+    - immutable
+    - may contain mutable objects (list)
+    - can be nested
+    - on output they are always surrounded by parenthesis, so that nested tuples are interpreted correctly
+    - tuples can be packed and unpacked (unpacking used for multi-variable assignment on the left-side)
+        - not just tuples or lists but any iterables: string, file, iterator,
+          generator
+    - singleton = 1, # trailing comma at the end, neccessary
+
+(1, 2, 3, 4) < (1, 2, 4)
+
+TASK:
+a) return list of tuples, each tuple of len lengthPerSplit, last tuple may be exception. 
+b) given a tuple, create a new one in which the elements are reversed. 
+    /\
+See: a) splititer2tuples.py b) I. reversed(x) # `reversed(seq)` II. x[::-1] #
+step == -1
+
+SETS
+****
+    |
+empty set can be created with basket = set(), otherwise basket = {'orange', 'banana', 'apple', 'orange'}
+diff: a - b
+union: a | b
+intersection: a & b
+xor: a ^ b
+
+set comprehension:
+{x for x in 'abracadabra' if x not in 'abc'} # -> {'r','d'}
+
+
+DICTS
+*****
+    |
+keys of a dict must be immutable objects: strings, numbers or (nested) tuples containing only strings and numbers
+lists are mutable
+
+'a' in d
+list(d.keys()) / sorted(d.keys())
+dict() builds a dict directly from a seq of (key, value) tuples
+dict(guido=129, bahamas=13234, tantra=129) # keyword args
+{x: x**2 for x in (2, 4, 6)}
+
+>>> a = {1: 2, 2:3, 4:5}
+>>> b = {1: 2, 2: 3, 44: 45}
+>>> type(a.items())
+<class 'dict_items'>
+>>> a.items() & b.items() # find (key, value) pairs in common
+{(1, 2), (2, 3)}
+
+`
+knights = {'robin': 'the brave'}
+knights.items() # iterator of tuples (key, value)
+kights.keys() # support common set operations (intersection, union, diff)
+`
+
+`collections.OrderedDict` - dictionary that remembers insertion order.
+    - kwargs do not make sense since their insertion order is arbitrary
+    - use list of tuples as `args`
+
+<dict>.update(updateDict) # entries in <dict> will be updated with values from
+updateDict
+
+<dict>.setdefault(key[, default]) # if key not in <dict> inserts key w/ value
+default (which defaults to None). Otherwise returns the value associated w/
+key.
+Better:
+-------
+`from collections import defaultdict` # value is a container (list, set),
+automatically initialized, e.g.
+>>> from collections import defaultdict
+>>> d = defaultdict(set)
+>>> d['a']
+set()
+
+TASK:
+a) implement a dict with insensitive string keys
+b) create a dict {stock: price} (given in solution script). Get the max and min priced stock. Use `zip()`
+    /\
+See: "~/My Documents/workspace/libs/python/KeyInsensitiveDict.py"
+
+`copy` module: `copy.copy(x)` and `copy.deepcopy(x)`
+****************************************************
+    ||
+deep copy - copy.deepcopy(x) - makes a deep copy of x by copying recursively all its components. 
+- No recursive loop.
+- In order not to copy too much, user defined classes 
+can override the copying method or the components to be copied
+
+shallow copy - copy.copy(x) - makes a shallow copy of x by creating a new placeholder object and adding references to it (whenever possible) from the original object.
+shallow copy of dicts: dict.copy()
+shallow copy of lists: l = old_list[:]
+
+
+MODULES
+*******
+    |
++ main module - the collections of variables/functions I have access to when my
+code is executed on top level or in calculator (interpreter) mode.
++ The module's name is available as the value of the global variable __name__
++ A module may contain multiple class definitions.
++ import <module> 
+    - this does not enter directly the names of the functions defined in <module>, only the module name. 
+    - Using the module name, the functions can be accessed:
+        <module>.<func>()
++ Executable statements in a module are executed only once when the module is imported.
+
++ from <module> import (<func1>, <func2>) | *
+    - in this case, <module> is not imported
+
++ from <module> import * is frowned upon, because it produces poorly readable code and it can possibly hide some things already defined.
+
+Executing modules as scripts
+----------------------------
+If the below code is added at the end of the module,
+
+if __name__ == '__main__':
+    import sys
+    <func>(int(sys.argv[1]))
+
+it will only run if the module is executed as the "main" file (e.g. import <module> vs. python <module>.py <args>)
+
+sys.path (in the following order)
+    - current dir
+    - PYTHONPATH (`os.environ['PYTHONPATH']`) # os.pathsep
+    - installation default
+
+"Compiled" python modules
+-------------------------
+__pycache__/module.version.pyc -> e.g. __pycache__/spam.cp4ython-33.pyc
+- compiled python modules are platform independent<F3>
+- python recompiles modules if the modif. date of the source is newer than that of the compiled module. 
+    - it does not check the cache if the module is loaded directly from the command line.
+    - if there's no source ('compiled-only' distribution)
+
+Standard modules
+----------------
++ platform dependent: eg. winreg
++ `sys` modules exists in every python interpreter
+    - sys.ps1 / sys.ps2 - primary / secondary prompts
+    - sys.path - list of strings determining the interpreter's search path for modules. Taken from PYTHONPATH or built-in value. 
+    - sys.path.append('/usr/lib/python')
+the dir function lists the names a module defines: dir(<module>)
+    - all types of names: variables, functions, modules, etc.
+    - does not list built-in funcs and vars
+        <code>         
+            import builtins
+            dir(builtins)
+        </code>
+
+!!!Packages
+--------
++ directory structure - each dir representing a package must contain the __init__.py init script 
+    - that instructs the interpreter which modules to import when encountering `from x import *`. this can be an empty file also.
+    __all__ - a list defined in __init__.py with the module names to be imported; a package index provided by the package author. 
+    - The package author may decide not to support it.
+    - if __all__ is not defined, 
+        `from pckg.subpckg import *` will only import names in pckg.subpckg, or subpackages which have been explicitly loaded by previous import statements in the calling module/script.
+    <code>
+        import pckg.subpckg -> pckg.subpckg.func()
+        from pck.subpckg import func -> func()
+    </code>
+
+Intra-package references
+------------------------
+Absolute imports:
+
+import mypkg.sibling
+from mypkg import sibling
+from mypkg.sibling import example
+
+Relative imports:
+
+from . import sibling
+from .sibling import example
+
+Relative imports are based on the name of the current module. If the current
+module name is '__main__', absolute imports must be used.
+TASK:
+a) play around w/ modules & packages, following the instructions in
+`module.playground`
+
+Packages in multiple dirs
+-------------------------
+__path__ - a list of directories containing the __init__.py of the package which is initialized before the codes in the __init__.py's are executed.
+            Modifying this variable will affect future searches for subpackages and modules within the package.
+!!! - Couldn't get it working.
+
+
+INPUT AND OUTPUT
+****************
+
+Fancier output formatting
+-------------------------
+!<conversion> e.g. !r
+:<format specification> e.g. :.2f
+{!s} - apply str() - returns representations which are more human-readable
+{!r} - apply repr() - returns representations which can be read by the interpreter (or a SyntaxError is thrown)
+
+TASK:
+a) format 'This {food} is {adjective}!'
+b) format the value of pi in a string 1) using repr() 2) w/ 3 decimal precision
+c) create a ;-separated list with 3 (Name: magic_number pairs, using format with packed kwrd args
+d) print in one line dynamically: http://stackoverflow.com/questions/3249524/print-in-one-line-dynamically-python
+    /\
+See formatting.py, "~/My Documents/workspace/libs/python/IOTools.py"
+
+builtin func vars() returns a dictionary of all local variables
+
+
+READING AND WRITING FILES
+*************************
+f = open(filename, mode) returns a file object
+    - 'r', 'r+', 'w', 'a'. 'r' is the default when omitted. 'b' appended to the mode opens the file in binary format as opposed to the default text mode.
+    - using `with open(...) as ...` makes sure the file is closed after it has
+      finished its suite. It is also shorter than a try-finally block. 
+      It's the PREDEFINED CLEANUP ACTION of the file object which means that closing the file will
+      always execute, independent of the intermediary operations.
+      Objects like file with pre-defined default cleanup actions will mention that in their documentations.
+
+Open file with encoding, default utf-8, no CR/LF translation:
+<code>
+    import codecs
+    codecs.open(fileName, mode, encoding, **kwargs) # mode='r', encoding='utf-8'
+</code>
+
+Text
+-----
+* f.read(size) - `size` optional arg, if specified, `size` no. of chars will be read. Otherwise the entire content of the file.
+* f.readline() - returns a line ended by '\n'. If end of file has been reached, '' is returned.
+    - Platform spec. line ends (eg. '\n' or '\r\n\') are converted to '\n' when reading text from files and converted back when writing.
+* f.readlines()
+* f.write(string) - returns the number of chars written
+    - to write sth other than a string, it has to be converted to a string obj first (see str())
+
+Binary
+------
+f.read(size) - `size` optional arg
+f.tell() - the cursor's current pos in the file obj as the number of bytes from the beginning of the file when in binary mode
+f.seek(offset, from_what)
+    - from_what: 0 = beginning of file; 1 = current pos; 2 = end of file
+
+Saving structured data with json
+--------------------------------
+json module - serializing / deserializing (serialization / marshalling / flattening)
+The json format is commonly used by modern apps to allow for data exchange.
+    - json.load(file) # file should be opened for reading
+    - json.dump(obj, file) # `file` should be opened for writing. 
+    - json.dumps(obj) => str
+    - module `jsonschema`, function `validate`
+`json.dump`, `json.load` - a file object is worth of a royal plural.
+
+pickle ;-)
+----------
+pickle module
+    - serializing / deserializing (byte stream <=> obj hierarchy)
+        + pickle.dump(obj, file) # file must be opened for writing binary
+        + pickle.load(file) => returns py obj # file must be opened for
+reading binary
+    - not intended to be secure against malicious data
+    - preferred way to serialize py obj
+    - can store and restore user-defined classes and their instances (?), 
+        but the class def must be importable and live in the same module as when the obj was stored.
+    - backwards compatible
+    - format is py-spec, compact binary representation
+
+TASK:
+a) Create a text file 'file.txt' containing at least 3 lines. Open it in 'r' mode <with open() as...> (default opening in the following tasks). Loop over the lines in the file in a fast and memory efficient manner, and print them to the console. Test if the file is closed both inside and outside the 'with' block.
+b) Open 'file.txt' in 'r+' mode. Read the lines into a list using the file#readlines() func. Print the lines onto the console, in a single sttmnt w/o using a loop. Write to the end of the file 'Done (<number_of_lines>)?'.
+c) Open 'file.txt' in 'rb' mode. Read the 1st 34 bytes and decode the resulting 8-bit string (WARNING: have to figure out the correct encoding!!!). Tell the cursor's pos in the file. Jump the cursor 10 bytes ahead and read 20 bytes from that pos.
+d) Deserialize the pickle byte stream from 'http://www.pythonchallenge.com/pc/def/banner.p' and print the resulting obj on stdout. Jsonify the obj and save it to 'banner.json' then read it in again and display it on stdout.
+    /\
+See: a-c) files.py d) C:\Users\NB-Levente\Desktop\python\challenge\ch5.py
+
+xml
+---
+`xml.etree.ElementTree` vs. `lxml.etree` (latter is extremely fast and provides support for
+validation, XSLT (?).
+`xml.etree.ElementTree.parse()` - parses the entire XML doc into a doc
+obj. Methods:
+    `find()`
+    `iterfind()`
+    `findtext()`, 
+to search for specific XML elements. The args to these funcs are tag names,
+e.g. 'channel/title', and are always relative to the `XMLTree` elements they
+had been called on.
+
+`iterparse` - parse xml iteratively.
+Attributes: 
+    `text`
+    `tag`
+
+`get(<attr name>)` - retrieves a named attribute of the `ElementTree` object.
+
+TASK:
+a) Parse and summarize the RSS feed from 'Planet Python'
+('http://planet.python.org/rss20.xml') using the
+`xml.etree.ElementTree` class. Fields of interest in the summary: 
+'channel/item', 'title', 'pubDate', 'link'
+    /\
+See: a) xml_simple.py
+
+ERRORS AND EXCEPTIONS
+*********************
+    |
+raise Class <=> raise Class()
+raise Instance
+
+Syntax (parsing) errors: 
+----------------
+- e.g. SyntaxError
+
+Exceptions (exec. errors)
+-------------------------
+- e.g. TypeError
+
+Built-in exceptions
+-------------------
+- e.g. NameError, TypeError, ZeroDivisionError, KeyboardInterrupt
+- If an exception is not handled by the handlers of the corresponding `try:` clause, 
+    it is passed on to outer `try:` clauses and if it is not caught in any, 
+    it will land as an unhandled exception and will stop the execution of the script.
+- A handler may specify multiple types as a parenthesised tuple: `except (RuntimeError, TypeError, NameError):`
+- `raise` allows the programmer to throw any type of Exception (classes may derive from this)
+
+Exception instance/argument
+---------------------------
+ e.g. `inst = Exception('spam', 'spawn')`
+- `inst.args == str(inst)` # a tuple of instance args: ('spam', 'spawn')
+
+User-defined exceptions
+-----------------------
+- e.g. class MyException(Exception)
+- it is common practice to create a base class for exceptions occuring distinctly in a module.
+
+Exception chaining
+------------------
+Use exception chaining appropriately. In Python 3, "raise X from Y" should be used to indicate explicit replacement without losing the original traceback.
+E.g.
+try:
+    v = {}['a']
+except KeyError as e:
+    raise ValueError('failed') from e
+
+When possible, name the exceptions instead of using the bare `except:`
+construct. Bare `except` is equivalent to 'BaseException` and they catch
+`KeyboardInterrupt` and `SystemExit` exceptions as well. Catching all
+exceptions that signal program errors can be achieved by `except Exception`.
+
+TASK:
+a) what is the output of `>>> while True print('Hello world')` (hint: SyntaxError)
+b) what is the output of `>>> 2 + '2'` (hint: TypeError)
+    - the traceback contains lines from the source unless it's the stdin
+c) in a `try:...except:` clause open `10_rules_good_studying.txt`, read the first line and try to convert it to `int`. Print the last exception of the resulting error (hint: sys.exc_info()[0]) and raise the exception again.
+d) in a `try:...except:` clause raise an exception w/ args ('spam', 'spawn') and catch it as instance and in the catch block print the type of the instance, the instance args and `str(instance)`
+e) create class `MyException` with a single arg value, override the __init__ and __str__ (return exception value) methods. in a `try:...except:` clause raise a `MyException` of value 2*2 and in the `except` block print the exception and its value (using !r and !s for the same exception instance).
+f) raise KeyboardInterrupt and in the `finally` block print('Hello world')
+g) create 3 exception-derived classes, Error, InputError and TransitionError.  `Error` is just the base class, `InputError` defines 2 member vars, `expr` and `msg` for tracking input errors and `TransitionError` defines `prev`, `next` and `msg` for tracking transition errors (from prev to next). Document the classes. 
+h) What is exception chaining?
+    /\
+See: a-f) except.py, g) related_exceptions_in_module.py
+
+struct
+******
+    |
+1) struct = dict(); struct['alma'] = 'a fa alatt';
+2) class Struct: # http://norvig.com/python-iaq.html
+    def __init__(self, **entries): self.__dict__.update(entries)
+   def __repr__(self):
+    args = ['%s=%s' % (k, repr(v)) for (k,v) in vars(self).items()]
+    return 'Struct(%s)' % ', '.join(args)
+3) collections.namedtuple 
+
+Classes
+*******
+    |
+- It's a mixture between Modula-3 and C++.
+- Classes are created dynamically (when the interpreter encounters a
+  reference) and can be modified further after creation.
+- Class members are public by default and all methods are virtual
+    + virtual methods can be overriden in inheriting classes with methods of the same signature
+- Like in Modula-3, there's no shorthand for referencing class members from a
+  method. Instead the method func. is declared with the first arg as the obj
+it`self` which is implicitly provided by the method call. Similarly, for
+class methods, a class obj `cls` is also automatically provided as 1st arg.
+    + variable `self` and `cls` are also conventions, they have no special meaning to python.
+- Built-in types can also be used as base class in inheritance. 
+    e.g. class LinkedList(list)
+- Like in C++, most built-in operators w/ special syntax (arithmetic, subscripting?) can be redefined.
+- Aliasing: multiple names can be bound to the same object
+
+Python namespaces
+----------------------------
+A namespaces is a mapping from names to objects. Most are implemented as Python dictionaries. 
+E.g.: 
+ - global names in a module's namespace: <module> (builtins, __main__)
+ - the local names in a func. invocation
+ - the attributes of an object
+ - a class def.
+
+There's no confusion between the same names of diff. namespaces.
+
+`modname.funcname` - `modname` is an object and `funcname` is an attribute of it.
+Module attributes are *assignable* and *deleteable*: del modname.attr
+Namespaces are created in diff. moments and have diff. lifetimes.
+E.g. a module namespace is created when the module def. is read; a function's local namespace is created when the func. is invoked and deleted when it returns (or throws an exception).
+
+Python scopes
+------------
+A textual region of a python program where a namespace is directly accessible (an unqualified reference to a name is attempted to be located in the namespace).
+Any time during execution, 4 nested scopes whose namespaces are directly accessible (names searched in that order):
+
+1. innermost scope: func's local scope?
+2. any enclosing func's scope
+3. next-to-the-last scope contains the curr. module's global names (e.g. a statement is declared global)
+4. outermost scope contains built-in names
+
+nonlocal statement: variables in the enclosing func. are re-bound, otherwise (w/o the nonlocal statement) a new var is created.
+Assignments to names always go into the innermost scope.
+The statement del x deletes the name x from the namespace referenced by the local scope.
+All operations that introduce new names use the local scope: e.g. import sttmnt or func. def bind the module or func. name in the local scope
+
+The global statement denotes that a variable lives in the global scope and should be rebound there.
+`globals()`, `locals()`
+`vars()` 
+    - w/o args, equivalent to `locals()`
+    - w/ arg `object`, `vars(object)` is equivalent to `object.__dict__`
+
+TASKS:
+a) Create `module_names2.py` which declares class `A`. In its `__init__`
+method, print the `__name__` var and assign to `self.module` the curr. module
+programatically (no constant). Create then `module_names1.py` which declares
+class `B` which inherits class `A` and does nothing. What will be printed upon
+`b = B()` and what will be the value of `b.module`?
+b) Write a `scope_test` func. Inside, define `local_spam`, `nonlocal_spam` and
+`global_spam` funcs. Each of these funcs defines variable `spam` with the
+appropriate modifier (e.g. `nonlocal`) and assigns it its semantics as string
+(e.g. 'nonlocal spam'). In the body of `scope test`, initialize a var `spam`
+then call the three funcs one by one (local, nonlocal, global) and after each
+call print the value of `spam`. Finally, invoke `scope_test` in the module's
+namespace and print the value of `spam` after the call.
+c) What are the "magic" members (names w/ double leading and trailing
+underscores) of a class obj?
+    /\
+See: a) module_names1.py, module_names2.py b) scopes.py
+
+
+Class def. syntax
+-----------------
+func. def. is a statement (it assigns the func. name to the local namespace AND registers the func. in the current symbol table)
+
+class ClassName:
+    <statement 1>
+    <statement 2>
+    ...
+    <statement n>
+
+When a new class definition is entered, a new namespace is created which will represent the local scope. Function def. will have effect in the class' namespace.
+After the end the class definition (end of statement), a class object is created, which is bound to the active scope (the one just before the class definition was entered) by the name ClassName.
+
+Class object
+-----------
+instantiation; see __init__()
+attribute referencing: class vs. instance attribs
+
+class MyClass:
+    x = 12345
+    
+    def __init__(self):
+        self.x = 5
+
+    def demo(self):
+        print('Demo {name}'.format(name=type(self).__name__))
+
+MyClass.x => 12345
+MyClass().x => 5
+
+Instance object
+---------------
+data attributes - spring into existence when they are assigned
+diff. between a method obj and a func. obj.: method obj is attribute of an instance, while function object is part of the class def.
+
+instanceObj.demo() - method object
+MyClass.demo(instanceObj) - func. obj.
+
+Function objects can be added to a class definition any time.
+E.g. we have already a `MyException` class and we want to override its __str__
+method.
+
+def func(self): return Exception.__str__(self)
+MyException.__str__ = func
+raise MyException('Finally ;-)')
+
+Class method
+------------
+@classmethod
+def class_method(cls, *args)
+
+- OOP paradigm: encapsulation
+- access to class members (fields and methods)
+- inheriting classes will also have `class_method(cls, *args)`
+
+Static method
+-------------
+@staticmethod
+def static_method(*args)
+
+- OOP paradigm: encapsulation
+- no access to class members as THE CLASS IS NOT PASSED TO THE METHOD
+
+Class and instance variables
+---------------------------
+class vars are equivalent to java classes' static vars
+
+Random remarks
+--------------
+Data attr override method attr
+Nothing enforces in python data hiding, it is all based on convention (e.g. prefix with a unique small string data attr)
+
+The global scope associated w/ a method is the module containing its definition.
+__object__.class
+
+Inheritance
+-----------
+class DerivedClassName(mod.BaseClass) # an arbitrary expression in the parenthesis
+
+Multiple inheritance
+--------------------
+class DerivedClass(BaseClass1, BaseClass2, BaseClass3)
+depth first, left to right, search for attr in multiple base classes, omitting overlaps in the hierarchy.
+
+`diamond relationships` - one parent class can be accessed through multiple paths, e.g. object
+
+`cls.__bases__` - a tuple of base classes of `cls`
+
+Private variables
+-----------------
+don't exist in python
+there's a convention: functions, methods or data member names prefixed by an underscore are treated by most code as a non-public part of the API (implementation detail subj. to change)
+
+Odds and ends
+-------------
+Often a method which expects a particular abstract data structure can be passed a class which emulates the methods which the expected data type also provides.
+E.g. a method which formats data from a file object can instead (of a file obj.) be passed a class which provides the read() and readline() methods on a string buffer.
+This is like loose-type polimorphism.
+
+Instance method objects have attr too: m.__self__ is the instance obj of the method and m.__func__ is the func obj corresponding to the method obj
+
+TASK:
+a) Create a rectangle class w/ `width`, `height` members. Overload the __repr__ method as 'width: {width}, height: {height}', but not directly. Create a sep. func called `format()` and assign it to __repr__()
+b) Overload the '+' operator so that adding 2 recs together will result in a tuple of 2 rectangles so that the smaller orig. rec becomes bigger and the bigger orig. one smaller. 
+c) Overload the '[]' so that rect_instance[i] will return the i'th remaining
+rectangle (by square-gridding the orig. rectangle - in each iteration the
+greatest possible square). Raise `TypeError` when key is not an integer and
+`IndexError` when it is out of range. Cache (and serialize) the last n
+retrievals.
+d) Create a `Date` class for storing `year`, `month`, `day` fields. 
+Override the `__repr__` method. Create a class method for returning a `Date`
+instance from a 'dd-mm-yyyy' date string. Create a static method for
+validating a date string. Check if inheriting classes can access the static
+method of `Date`.
+
+See:
+    /\
+a-c) rectangle.py d) instance_class_static.py
+
+Iterators
+*********
+    |
+# for key in {'one':1, 'two':2}
+# for char in 'abc'
+with open("myfile.txt", "r") as f:
+    for line in f:
+        print(line, end='')
+
+Behind the scenes, the for loop calls on the container obj. the iter() func which returns an iterator object providing the __next__() func which returns the next obj from the container.
+There's a built-in alternative, next(). When it reaches the end of the container, it will raise a `StopIteration` exception which causes the for loop to terminate.
+
+>>> s = 'abc'
+>>> it = iter(s)
+>>> next(it)
+'a'
+>>> next(it)
+'b'
+>>> next(it)
+'c'
+>>> next(it)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>>
+
+Given the mechanics of the iterator protocol, if I define an `__iter__()` func
+in my class which returns an object with the `__next__()` func, I'll have
+iterator support for my class :-). If my class also defines a `__next__()`
+method, then `__iter__()` can return just `self`.
+
+`enumerate` iterator
+------------------
+# generates (index, value) tuples from a sequence of [values]
+for i, v in enumerate(['blue', 'green', 'yellow']):
+    print(i, v)
+
+>>> help(filter)
+----------------
+Help on class filter in module builtins:
+
+class filter(object)
+ |  filter(function or None, iterable) --> filter object
+ |
+ |  Return an iterator yielding those items of iterable for which function(item)
+ |  is true. If function is None, return the items that are true.
+
+>>> help(map) # like lapply
+---------------------------
+Help on class map in module builtins:
+
+class map(object)
+ |  map(func, *iterables) --> map object
+ |
+ |  Make an iterator that computes the function using arguments from
+ |  each of the iterables.  Stops when the shortest iterable is exhausted.        
+
+TASK:
+a) Create a wrapper class around a sequence with iterator support. The
+`__next__` method returns the prev. element in the sequence, starting w/ the
+last.
+b) Create a sequence containing the numbers from 0 to 100. Using the `filter`
+and `map` methods, compute the sum of two times those numbers which are
+divisible by 5.
+    /\
+See: a) reverse.py b) divisible_by10.py
+
+Generators
+**********
+    |
+Are powerful tools for creating iterators. They are written like regular functions but use the `yield` statement whenever they return data. `yield` remembers the last returned value as well as the last stmnt executed.
+
+def reverse(data):
+    for index in range(len(data) - 1, -1, -1):
+        # !!!Important stuff below
+        yield data[index]
+
+for char in reverse('gold'):
+    print(char)
+
+The `__iter__()` and `__next__()` methods are created automatically - that's what makes the generators so compact.
+
+`yield` saves the local variables' values and execution state between calls. Plus generators raise `StopIteration` exception automatically when they terminate. No more effort than writing regular functions. 
+
+TASK:
+a) Create a generator func `reverse` for reversing a seq. 
+    /\
+See: a) reverse.py
+
+Generator expressions
+---------------------
+Similar to list comprehensions. More memory friendly.
+More compact than regular generators.
+Designed for situations where the generator is used right away by an enclosing func.
+
+TASK (single expression each):
+a) Generator used in summing up cross products of two vectors of equal length.
+b) sin table from 0 to 90 degrees
+c) unique words from a page
+d) Graduate student (student.gpa, student.name) w/ max gpa
+    /\
+See: a-d) generator_expressions.py
+
+TOUR OF THE STANDARD LIBRARY
+****************************
+
+Operating System Interface
+--------------------------
+`os` - dozens of func. for interacting with the OS:
+    `os.getcwd()` # get current working dir
+    `os.chdir(<dir>)` # change dir
+    `os.system(<command>) # execute <command> as if in terminal, print message
+(if any) and return the exit code of the underlying process.
+
+File Wildcards
+-----------------
+`glob` module
+E.g. glob.glob('*.py')
+
+Command line args
+------------------
+`sys`, `sys.argv`
+`argparse`, `getopt` modules for command line processing.
+
+TASK:
+a) write a py script which prints its args on the stdout. Call it as `python
+argv_demo.py one two three`
+
+See:
+    /\
+a) argv_demo.py
+
+Error Output Redirection And Program Termination
+-----------------------------------------------
+`sys` -> `stdin`, `stdout`, `stderr` 
+    - `stderr` is useful for displaying errors and warnings even when stdout has been redirected.
+    - `sys.stderr|stdout.write` - returns the number of chars written
+
+>>> sys.stderr.write('Warning, negative value entered for the cursor position in
+ the file!')
+68
+Warning, negative value entered for the cursor position in the file!
+
+sys.stdout.write("Flush!\n---\n")
+sys.stdout.flush()
+
+sys.exit() - most direct way to exit a script
+
+Mathematics
+-----------
+the `math` module gives access to the underlying C library funcs for floating-point math:
+>>> import math
+>>> math.cos(math.pi / 4)
+0.7071067811865476
+>>> math.log(1024, 2)
+10.0
+>>>
+
+The random modules provides tools for making random selections:
+
+import random
+>>> random.choice(['apple', 'blueberries', 'cranberries'])
+'cranberries'
+>>> random.sample(range(100), 10)
+[82, 17, 60, 77, 67, 26, 16, 30, 8, 32]
+>>> random.random()
+0.9721842162594542
+>>> random.randrange(9)
+3
+random.shuffle(<list>) - random re-arrange of the elems in <list>
+
+The SciPy <www.scipy.org> project has many other libraries for scientific computations.
+
+Dates and times
+---------------
+datetime.timedelta
+
+>>> from datetime import date
+>>> now = date.now()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: type object 'datetime.date' has no attribute 'now'
+>>> now = date.today()
+>>> now
+datetime.date(2015, 4, 20)
+>>> now.strftime('%d-%m-%y. %d %b %D is a %A on the %d day of %B')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: Invalid format string
+>>> now.strftime("%d-%m-%y. %d %b %D is a %A on the %d day of %B")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: Invalid format string
+>>> now.strftime("%d-%m-%y. %d %b %Y is a %A on the %d day of %B")
+'20-04-15. 20 Apr 2015 is a Monday on the 20 day of April'
+>>> birthday = date(1984, 06, 11)
+  File "<stdin>", line 1
+    birthday = date(1984, 06, 11)
+                           ^
+SyntaxError: invalid token
+>>> birthday = date(1984, 6, 11)
+>>> (now - birthday).days
+11270
+>>>
+
+from datetime import datetime
+datetime.fromtimestamp(<ts>) # Return the local date and time corresponding to the POSIX timestamp, such as is returned by time.time().
+
+??? `datetime.timezone` - `datetime.strptime()` # what is the expected
+datetime string for the format '%Z'?
+`time.sleep(n)` - suspends the execution of the current thread for `n`
+seconds. 
+
+Data compression
+----------------
+import zlib
+s = b'which moterfucker bitch witch whipped with whiches...'
+t = zlib.compress(s)
+zlib.decompress(t)
+zlib.crc32(s)
+
+zip = zipfile.ZipFile(zipfilename, mode='a', compression=zipfile.DEFLATED) #
+compression 'zipfile.ZIP_DEFLATED' requires zlib
+zip.write(inputfilename)
+
+Performance Measurement
+-----------------------
+timeit module, Timer class
+
+TASK:
+a) measure the execution time of arg swapping (a = 1, b = 2) 1) traditional - 3 sttmnt 2) tuple packing and unpacking
+b) write a `memoid` class in `rectangle.py` which will act a function wrapper
+for the `__rectangle__` func in the same module, storing func calls with their
+corresponding return value which have already occurred and if a func call is
+in the cache, retrieves it from there. Design it smart so if user asks for
+rect[9] and rect[6] is already in the cache, start recursive computations from
+rect[6].  
+
+    /\
+See: a) timer.py
+
+Quality Control
+---------------
+I. `doctest` module
+    - simply include a func call with the result in the func's docstring
+    - call `doctest.testmod()` at the end
+
+>>> def average(numbers):
+...     """Computes the arithmetic average of a list of numbers.
+...     >>> print(average([10, 20, 30]))
+...     20
+...     """
+...     return sum(numbers) / len(numbers)
+...
+>>> import doctest
+>>> doctest.testmod()
+**********************************************************************
+File "__main__", line 3, in __main__.average
+Failed example:
+    print(average([10, 20, 30]))
+Expected:
+    20
+Got:
+    20.0
+**********************************************************************
+1 items had failures:
+   1 of   1 in __main__.average
+***Test Failed*** 1 failures.
+TestResults(failed=1, attempted=1)
+>>> def average(numbers):
+...     """Computes the arithmetic average of a list of numbers.
+...     >>> print(average([10, 20, 30]))
+...     20.0
+...     """
+...     return sum(numbers) / len(numbers)
+...
+>>> doctest.testmod()
+TestResults(failed=0, attempted=1)
+>>>
+
+II. `unittest` module allows maintaining tests in a sep. file
+
+>>> import unittest
+>>> class TestStatisticalFunctions(unittest.TestCase):
+...
+...     def test_average(self):
+...             self.assertEqual(average([10, 1]), 5.5)
+...             with self.assertRaises(ZeroDivisionError):
+...                     average([])
+...             with self.assertRaises(TypeError):
+...                     average(10, 20)
+...
+>>> unittest.main()
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+`unittest.main()` 
+    * invoking this from the command line executes all tests 
+    By using polimorphism, right? First looks up classes in the module whose
+    `__bases__` attrib contains `unittest.case.TestCase`, then instantiates them,
+    finally running all methods in each such instance whose names start w/ `test`.
+    * !!! when resolving absolute imports, python references to the dir
+    where the script to be executed resides. How can I make python add the current
+    dir (where python <script.py> is called from) to the module search path?
+
+Syntax for unit testing (some of the most freq. used; inherited from
+`unittest.TestCase`):
+    assert - write your own assertion
+    assertEqual(a, b)
+    assertNotEqual(a, b)
+    assertIn(a, b)
+    assertNotIn(a, b)
+    assertTrue(a)
+    assertFalse(a)
+    assertIsInstance(a, TYPE)
+    assertRaisesError(ERROR, a, args)
+
+Python Debugger (pdb)
+---------------------
+It stops the execution at the point in code where the 'import pdb;
+pdb.set_trace()' occurs.
+
+evaluate vars
+help - list of cmds
+list - shows 5 lines either side of curr. exec. point
+n - eval next line
+jump <line_nr>
+continue
+args - vars involved in curr. exec. point
+quit | exit
+
+"Batteries included"
+--------------------
+Robust and sophisticated packages:
+
+xmlrpc.client, xmlrpc.server - remote procedure calls almost as a trivial call (no xml knowledge is needed)
+email - constructing complex e-mail message structures, message headers, internet encoding
+xml.dom, xml.sax - manipulation of xml (common data interchange format)
+csv - supports direct reading and writing
+    csv.reader(iterable, [dialect='excel'[, **kwds]), where iterable can be any
+obj which returns a line of input for each iteration, such as a file obj. or a
+list.
+gettext, locale, codecs - internationalization
+inspect - get useful information from live python objects
+
+
+BRIEF TOUR OF THE STD LIBRARY - II
+**********************************
+
+- more advanced programming needs, these modules occur rarely in small scripts
+
+Output formatting
+-----------------
+    |
+reprlib - customized for abbreviated displays of large or nested containers
+pprint - "pretty printer" - more sophisticated formatting of built-in and custom objects so that they are readable by the interpreter (adds line breaks and indentation)
+
+TASK:
+a) print 'supercalifragilisticexpialidocious' w/ reprlib
+    reprlib.Repr => repr(), repr_list(), repr_set()... level?
+b) print array = [[[['cyan', 'magenta'], 'green', 'opaque'], ['orange', 'rose']], 'blue'] using "pretty printer", w/ width=40 and width=60, respectively.
+c) print `doc` using `textwrap`'s `fill` and `wrap` methods, respectively, using width=40.
+    doc = """the wrap() method is like fill except that
+    it returns a list of strings instead of a large string including
+    newlines to separate the lines"""
+    /\
+See: format_output.py
+
+Locales
+-------
+    |
+TASK: 
+a) format the value 1234567.8 first as a number with US grouping (every 3 digits in the decimal part, from right to left, are separated by comma)
+b) format the same value as a US currency value
+    /\
+See: locale_demo.py
+
+Templating
+----------
+    |
+string has a Template class which allows dynamic substitution of ${keywords},
+where `keywords` is a valid py id. `$$` is an escaped '$'. 
+Separate program logic from multiple output formatting (e.g. xml files, html reports)   
+
+TASK:
+a) create template `${village}folk send $$10 to ${cause}` and subst village w/ 'Nottingham' and cause w/ 'flood'
+b) create template `Return the ${item} to ${owner}, subst item w/ 'unladen' swallow and DON'T subst owner. First use Template.substitute then Template.safe_substitute
+c) rename photofiles = ['img_1074.jpg', 'img_1076.jpg', 'img_1077.jpg'] to a custom format (e.g. date_seqno.ext) using a Template-derived batch rename utility class and % as the delimiter in the template
+    /\
+See: template.py, os.path.split!ext, time.strformattime
+
+Working with Binary Record Layouts
+----------------------------------
+    |
+`struct` module
+pack() and unpack() methods - byte stream is a series of hex bytes. `struct`
+module format strings: 
+    - 1st char: order (e.g. big endian), size(?), alignment(?)
+    - remaining chars: types of args (e.g. I - unsigned int 4 bytes, H -
+      unsigned short 2 bytes)
+TASK:
+a) print the 1st 3 headers (filename, crc32, comp_size, uncomp_size) from a zip file
+    /\
+See: zipheaders.py
+
+Multitasking
+------------
+    |
+* threading is decoupling tasks which are not sequentially dependent. A common scenario is doing (user) I/O while another process (thread) running in the background.
+
+TASK:
+a) zip a file in the background (args: input file, output file) while the main program is running in its own thread, waiting for the bckg thread to complete.
+b) implement a multi-processing framework based on the Provider-Consumer
+model.
+    /\
+See: multitasking.py, libs/MPFramework.py 
+
+Often the most complex part of writing multi-threaded apps is sync of shared resources. The `threading` module offers sync primitives, such as: semaphores, sync. blocks, events, locks, but it is relatively easy to make a mistake at design time using these primitives. The `queue` module offers a more reliable, more readable way to design multi-threaded apps: shared resources are all managed in a single thread and the `queue` module gives sync access to threads requesting those resources. 
+`queue.Queue`
+
+threading.current_thread()
+
+
+Logging
+-------
+    |
+`logging` - full featured, flexible logging.
+By default, logging messages are printed on stderr, and the DEBUG and INFO messages are supressed.
+Logging options can be set from within py or from a config file (logging can be then customized w/o changing the app).
+There are multiple routing opts: e-mail, datagrams (?), web server. New filters can select diff. routing based on msg priority.
+
+TASK:
+a) print 5 messages according to the 5 diff. message priorities
+    /\
+See: logging.py
+
+Weak references
+    |
+---------------
+`weakref`, `gc`
+py's auto gc - tracking an obj creates itself a reference. 
+Weak references don't create references to the obj. When an obj is no longer needed, it is removed from
+the weakref table and a callback is triggered on the weakref obj. Typical apps include caching objects which are expensive to create.
+
+TASK:
+a) create a wrapper class around a value, instantiate it and assign the obj to weakref table. 
+retrieve it from there, then del it and gc , then try to retrieve it again & see what happens.
+    /\
+See: weakref_demo.py
+
+Working with lists
+------------------
+    |
+`array.array` - homogeneus data, more compact than py lists, e.x. array('H', [<list>]) => creates an array of unsigned 2 byte numbers (usual py list integer items are 16 bytes)
+`collections.deque` - faster append and pop operations on the left side than regular lists but slower lookups in the middle. Used for implementing queues and breath first searches.
+    `#appendleft()`, `#popleft()`
+`bisect` - manipulating sorted lists
+`heapq`
+    (funcs) `heapify`, `heappop`, `heappush` - apps which repeatedly need to access 
+        the lowest/largest elem from the list but don't want to perform a full list sort
+    `nlargest`, `nsmallest` - the `n` largest/smallest elems from the list.
+        Superior performance if `n` is small compared to the overall size of the collection.
+
+TASK:
+a) create a py array of 5 unsigned integers, do a sum on it and print the sublist between (including) the 3rd and 5th elements
+b) create a queue of 4 strings, then pop and print the left one, and print the queue after the pop op.
+c) insert a new element into a sorted list of 4 tuples of (<number>, <text>), using the `bisect` module
+d) create a list of 4 elements, print it, then print the 3 smallest values.
+Create fron the list a heap, insert into it a new elem and pop+print the lowest 3 values.
+e) Create a small portfolio dataset (list), elements are dicts, e.g. {name:
+'IBM', 'shares': 100, price: '91.1'}. Pick the 3 cheapest
+    /\ 
+See: list_alternatives.py
+
+Decimal floating point arithmetic
+---------------------------------
+    |
+`decimal` module, `Decimal` class. Decimal floating-point arithmetics. Results as if calculations were done by hand.
+Built-in type `float` is represented in binary form.
+Apps:
+    - financial apps where a certain precision needed
+    - rounding as prescribed by regulation or policy
+    - equality testing and modulo calculations unsuitable for floating-point operands (resulting from calculations)
+    - tracking of significant decimal places
+
+TASK:
+a) calc 5% tax on 70 cent phone charge w/ 2 dec prec (using Decimal vs float)
+b) compare 1.0 mod 0.1 done w/ Decimal vs float
+c) compare sum([Decimal('0.1')] * 10) w/ sum([0.1] * 10)
+d) calc 1 / 7 w/ 36 digit precision
+    /\
+See: decimal_demo.py
+
+Running external apps
+---------------------
+`subprocess`, `os` modules
+return_value = subprocess.call("<subprocess_string_with_args>", shell=True) #
+what the hell is 'shell=True'?
+if return_value != 0:
+    os._exit(return_value) # exit status of the process
+
+# both are correct
+>>> from subprocess import call
+>>> call(['notepad.exe', 'C:\\Temp\aaa.txt'])
+0
+>>> call('notepad.exe C:/Temp/aaa.txt')
+0
+
+Internet access
+***************
+
+Server
+------
+`from http.server import BaseHTTPRequestHandler, HTTPServer`
+`BaseHTTPRequestHandler`: sending back a response should adhere to the following
+protocol:
+    1) send_response(<HTTP_STATUS_CODE>)
+    2) send_header(<header_name>, <header_value>) # any response headers
+    3) end_headers() # empty line
+    4) wfile.write(<byte content>) # write any content to the response stream, optional
+
+`from socketServer import ThreadingMixIn` 
+    - allows multi-threaded `HttpServer` by defining a `process_request(self,
+      request, client_address)` method which serves `request` in a new thread:
+        `MyMultithreadedHTTPServer(HTTPServer, ThreadingMixIn):
+            pass
+        `
+
+Client
+------
+Built-in (part of std distrib):
+    `urllib` - knows only HTTP, FTP, local files. No cookie support.
+    `urllib2` - cookies. Doesn't support all HTTP verbs such as 'TRACE'.
+        - It has been split across several modules in Python 3 named `urllib.request` and `urllib.error`.
+3rd party:
+    `requests` - more support, simple interface
+
+from urllib.request import Request, urlopen, parse, quote, unquote
+    `urlopen(url)` # returns http.client.HTTPResponse
+    `quote(string)` replaces non-ascii chars with their hex codes in a (url?) string.
+    `unquote(string)` translates back quoted chars (hex codes) to unicode? which encoding?
+    `parse.urlencode(<params_dict>)`
+
+        `
+        # GET
+
+        # Dictionary of query parameters (if any)
+        parms = {
+            'name1' : 'value1',
+            'name2' : 'value2'
+        }
+        # Encode the query string
+        querystring = parse.urlencode(parms)
+
+        # Make a GET request and read the response
+        url = 'http://httpbin.org/get'
+        u = request.urlopen(url+'?' + querystring)
+        resp = u.read()
+        
+        # POST
+        url = 'http://httpbin.org/post'
+        u = request.urlopen(url, querystring.encode('ascii'))
+
+        # using `Request`
+
+        # Extra headers (dict)
+        headers = {
+        'User-agent' : 'none/ofyourbusiness',
+        'Spam' : 'Eggs'
+        }
+        
+        req = request.Request(url, querystring.encode('ascii'), headers=headers)
+        # Make a request and read the response
+        u = request.urlopen(req)
+        resp = u.read()
+        `
+
+Mail
+----
+`import smtplib
+server = smtplib.SMTP('localhost') # needs a mail server running on localhost
+server.sendmail(...)
+server.quit()`
+
+TASK:
+a) Which is best in Python: urllib2, PycURL or mechanize?
+b) Write a multi-threaded web scraper which extracts <meta name="keywords"
+content="?"> from HTML pages.
+    /\
+See: 
+a) http://stackoverflow.com/questions/2385855/which-is-best-in-python-urllib2-pycurl-or-mechanize,
+incl. presentations from Asheesh Laroia on the topic.
+b) C:\READY\Jobs\AVG\projects\AVG\ Me\scrape.py
+
+TDD
+***
+
+http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137
+
+1. create a test that fails # give the test function an intuitive name, e.g.
+`test_calculator_add_method_correct()` or
+`test_calculator_add_method_returns_ValueError_if_args_are_not_numbers()`
+2. write code to make the test pass
+3. go back to 1 / refactor
+
+The process of making a failing test pass can be very satisfying.
+
+TASK:
+a) Write a `TestCalculator` unittest, which 1) tests if the `Calculator`
+class' `add` method works properly for number input 2) tests whether the `add`
+method raises `ValueError` if any of the args is not number.         
+    /\
+See: a) tdd_example
+
+!!!Couldn't get it working w/ `unittest.main()` in
+`test.test_calculator.TestCalculator` when working dir is `tdd_example`. I
+didn't find a way to reference `app.calculator.Calculator` from
+`test.test_calculator.TestCalculator`.
+
+pip - https://pip.pypa.io/en/stable/
+---
+    - how does it work?
+
+nosetests
+---------
+    - cmdline opts:
+        --rednose - opt. plugin providing colored test output
+        -s - makes nosetests not capture std, useful when debugging
+
+MISC
+****
+
+Duck typing - https://en.wikipedia.org/wiki/Duck_typing#In_Python
+-----------
+    - instead of checking if an object has the expected method (e.g. quack),
+    surround the call w/ proper exc. handling or just let the exc. "bubble up"
+(and dealt by the calling methods or otherwise propagated back to user)
+
+Properties
+-----------
+@properties
+def nonDefaultScripts(self):
+    return {
+        'SessionScreens':'updateSessionTables.py',
+        'SessionEvents':'updateSessionTables.py'
+    }
+Avoid using properties for computationally expensive as the attribute notation
+makes the caller believe that access is (relatively) cheap.
+
+Cyclic Data Structure: 
+-----------------------
+L = [1, 2, 3]
+L.append(L) => [1, 2, 3, [...]]
+L[3] => [1, 2, 3, [...]]
+
+Troubleshooting
+****************
+
+1. ImportError: cannot import name 'pack'
+-----------------------------------------
+>>> import pickle
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Python34\lib\pickle.py", line 32, in <module>
+    from struct import pack, unpack
+ImportError: cannot import name 'pack'
+
+SOLUTION: http://stackoverflow.com/questions/1270738/why-does-import-of-ctypes-raise-importerror
+
+>>> import inspect
+>>> import struct
+>>> inspect.getabsfile(struct) # returns the abs path for the source or
+>>> compiled file of an obj
+'c:\\users\\nb-levente\\documents\\workspace\\libs\\python\\struct.py'
+
+TODO: decorators!!!
+
+DATA ENCODING AND PRCOESSING
+****************************
+
+Pandas lib.
+Python for Data Analysis: http://shop.oreilly.com/product/0636920023784.do
+
+TASK:
+a) read in csv data from file 'stocks.csv' using the `csv.DictReader(<file
+handle>)` (see its advantages as compared to `namedtuple`). Merge the date & time
+fields into a timestamp (? format) and write this new data to `stockks.csv'.
+    /\
+See: a) stocks_csv.py
+
+
+RECIPES FROM PYTHON 3.0 COOKBOOK
+********************************
+
+Data Structures and Algorithms
+------------------------------
+`collections.Counter` # the number of occurences of items in a seq
+                      # underlying implementation: dict[item] -> freq
+`collections.Counter#update(new_seq)`
+
+`Counter` instances can be easily combined using arithmetic operations.
+# tremendously useful tool for tabulating and counting data.
+# preferred over manual dict use 
+
+TASK:
+a) remove dups from a seq while maintaining order
+b) determine the most frequently occurring items in a seq
+See:
+    /\
+tricks.py

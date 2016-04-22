@@ -1,0 +1,30 @@
+.
+..
+sound/
+sound/effects/
+sound/effects/echo.py
+sound/effects/surround.py
+sound/effects/reverse.py
+sound/format/
+sound/format/wav.py
+sound/format/au.py
+sound/format/aiff.py
+sound/filters/
+sound/filters/vocoder.py
+sound/filters/equalizer.py
+sound/filters/karaoke.py
+
+from the `surround` module:
+    from . import echo
+    from ..filters import karaoke
+    from .. import format.au # is that possible? If `format` is a package, certainly.
+
+Since the name of the main module is always `__main__`, modules intended to be used as the main module must always use absolute import. 
+
+C:\Users\NB-Levente\Desktop\python\tutorial>python sound_test.py
+My name is sound.effects.karaoke
+Let's sing together!
+
+C:\Users\NB-Levente\Desktop\python\tutorial>python sound\effects\karaoke.py
+My name is __main__
+

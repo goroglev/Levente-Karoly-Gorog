@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+ 
+    <bean id="oAuthManager" class="com.ebuddy.util.oauth.OAuthManager">
+    	<constructor-arg name="consumerKey" value="ufAbNSqOZ70GW2CrjZXqw"/>     
+    	<constructor-arg name="consumerSecret" value="vyIih4agdtTyrvZO1Ve4QXJfkREd0vJCWowM7NOjw58"/>
+    	<constructor-arg name="requestTokenEndpointUrl" value="https://api.twitter.com/oauth/request_token"/>
+    	<constructor-arg name="accessTokenEndpointUrl" value="https://api.twitter.com/oauth/access_token"/>
+    	<constructor-arg name="authorizationWebsiteUrl" value="https://api.twitter.com/oauth/authorize"/>
+    	
+    	<constructor-arg name="accessToken"><null/></constructor-arg>
+    	<constructor-arg name="secretToken"><null/></constructor-arg>
+		<!-- 
+		<constructor-arg name="accessToken" value="34565145-pNRJentAdmBFlN5D9NSBbiDcufJkvtdHbY2y3UE0s" />
+    	<constructor-arg name="secretToken" value="lD499E1HdGNrA2B5CNakhek4YRwttyTIbzlRHSOmd1c"/>
+		-->
+    </bean>
+    
+    <bean id="oAuthHttpPost" class="com.ebuddy.util.oauth.OAuthHttpPost" scope="prototype">
+    	<!-- the scope of the bean is prototype i.e. a new instance for every new request  -->
+    	<constructor-arg name="uri" value="https://stream.twitter.com/1.1/statuses/filter.json"/>      
+    	<constructor-arg name="postParameters">
+	    	<!-- add additional entries to the map, e.g. 'follow', 'locations' -->
+	    	<map>
+	            <entry key="track" value="avg"/> <!-- input here other/additional keywords -->
+	            <entry key="delimited" value="length"/>
+	            <!-- <entry key="filter_level" value="medium"/> -->
+	            <entry key="stall_warnings" value="true"/>
+	        </map>	      
+    	</constructor-arg>
+    	<constructor-arg name="oAuthManager">
+    		<ref bean="oAuthManager"/>
+    	</constructor-arg>
+    </bean>
+    
+</beans>

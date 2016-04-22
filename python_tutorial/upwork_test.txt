@@ -1,0 +1,11 @@
+t Network & web programming
+n System administration
+d Testing & debugging
+d Object oriented programming
+d Files and I/O
+t Data structures and algorithms
+t Data types
+t Advanced data structures
+t Data encoding and processing
+d Concurrency
+t Security

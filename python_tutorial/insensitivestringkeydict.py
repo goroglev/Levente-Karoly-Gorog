@@ -1,0 +1,2 @@
+class InsensitiveStringKeyDict(dict):
+
